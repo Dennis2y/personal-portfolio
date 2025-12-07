@@ -8,21 +8,11 @@ import httpx
 
 app = FastAPI()
 
-# --- CORS: allow your frontend to call this backend from denarixx.com + local dev ---
-from fastapi.middleware.cors import CORSMiddleware
-
-origins = [
-    "https://denarixx.com",
-    "https://www.denarixx.com",
-    "http://localhost",
-    "http://127.0.0.1:8000",
-    "http://127.0.0.1:5500",
-]
-
+# --- CORS: allow ANY origin (localhost + denarixx.com etc.) ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=False,  # we don't need cookies
+    allow_origins=["*"],          # allow all origins
+    allow_credentials=False,      # no cookies needed
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -55,80 +45,84 @@ SYSTEM_PROMPT = (
     "and helpful high-level guidance.\n\n"
 )
 
+
 class ChatRequest(BaseModel):
-  message: str
-  detected_language: Optional[str] = None
+    message: str
+    detected_language: Optional[str] = None
+
 
 class ChatResponse(BaseModel):
-  reply: str
+    reply: str
+
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(payload: ChatRequest):
-  lang = payload.detected_language or "EN"
+    lang = payload.detected_language or "EN"
 
-  # Build prompt for Matrix X simple `?query=` API
-  prompt = (
-      SYSTEM_PROMPT
-      + f"User language code (hint): {lang}\n"
-      + f"User: {payload.message}\n"
-      + "Assistant:"
-  )
+    # Build prompt for Matrix X simple `?query=` API
+    prompt = (
+        SYSTEM_PROMPT
+        + f"User language code (hint): {lang}\n"
+        + f"User: {payload.message}\n"
+        + "Assistant:"
+    )
 
-  params = {
-      "query": prompt,
-      "model": MATRIX_MODEL,
-  }
+    params = {
+        "query": prompt,
+        "model": MATRIX_MODEL,
+    }
 
-  try:
-      async with httpx.AsyncClient(timeout=20.0) as client:
-          r = await client.get(MATRIX_BASE_URL, params=params)
-  except httpx.RequestError as exc:
-      raise HTTPException(
-          status_code=502,
-          detail="Error contacting AI service",
-      ) from exc
+    try:
+        async with httpx.AsyncClient(timeout=20.0) as client:
+            r = await client.get(MATRIX_BASE_URL, params=params)
+    except httpx.RequestError as exc:
+        raise HTTPException(
+            status_code=502,
+            detail="Error contacting AI service",
+        ) from exc
 
-  if r.status_code != 200:
-      raise HTTPException(
-          status_code=502,
-          detail=f"AI service returned status {r.status_code}",
-      )
+    if r.status_code != 200:
+        raise HTTPException(
+            status_code=502,
+            detail=f"AI service returned status {r.status_code}",
+        )
 
-  # Try to parse JSON, fall back to text
-  try:
-      data = r.json()
-  except ValueError:
-      # Not JSON
-      return ChatResponse(reply=r.text)
+    # Try to parse JSON, fall back to text
+    try:
+        data = r.json()
+    except ValueError:
+        # Not JSON
+        return ChatResponse(reply=r.text)
 
-  # Matrix X typical shape:
-  # {
-  #   "success": true,
-  #   "message": { "role": "assistant", "content": "..." },
-  #   "model_used": "gpt-4o-mini"
-  # }
-  if isinstance(data, str):
-      reply = data
-  else:
-      msg = data.get("message")
+    # Matrix X typical shape:
+    # {
+    #   "success": true,
+    #   "message": { "role": "assistant", "content": "..." },
+    #   "model_used": "gpt-4o-mini"
+    # }
+    if isinstance(data, str):
+        reply = data
+    else:
+        msg = data.get("message")
 
-      if isinstance(msg, dict):
-          # Prefer the assistant content
-          reply = msg.get("content") or msg.get("text") or str(msg)
-      elif isinstance(msg, str):
-          reply = msg
-      else:
-          # Fallbacks for other possible shapes
-          reply = (
-                  data.get("reply")
-                  or data.get("response")
-                  or data.get("answer")
-                  or str(data)
-          )
+        if isinstance(msg, dict):
+            # Prefer the assistant content
+            reply = msg.get("content") or msg.get("text") or str(msg)
+        elif isinstance(msg, str):
+            reply = msg
+        else:
+            # Fallbacks for other possible shapes
+            reply = (
+                data.get("reply")
+                or data.get("response")
+                or data.get("answer")
+                or str(data)
+            )
 
-  return ChatResponse(reply=reply)
+    return ChatResponse(reply=reply)
+
 
 # Optional: avoid 404 on "/" (purely cosmetic)
 @app.get("/")
 def root():
-  return {"status": "ok", "message": "DennisChat backend is running."}
+    return {"status": "ok", "message": "DennisChat backend is running."}
