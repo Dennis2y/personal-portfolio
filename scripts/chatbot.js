@@ -1,7 +1,7 @@
 // scripts/chatbot.js – DennisChat via FastAPI backend (no direct Matrix call in browser)
 
 (function () {
-  const API_URL = "http://127.0.0.1:8001/chat";
+  const API_URL = "https://personal-portfolio.onrender.com/chat";
 
   const launcher   = document.getElementById("chat-launcher");
   const chatWindow = document.getElementById("chat-window");
