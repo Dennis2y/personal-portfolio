@@ -11,8 +11,8 @@ app = FastAPI()
 # --- CORS: allow ANY origin (localhost + denarixx.com etc.) ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          # allow all origins
-    allow_credentials=False,      # no cookies needed
+    allow_origins=["*"],          # allow all origins (you can restrict later)
+    allow_credentials=False,      # no cookies/sessions needed
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -23,9 +23,10 @@ MATRIX_MODEL = "gpt-4o-mini"
 SYSTEM_PROMPT = (
     "You are DennisChat, the official AI assistant on the personal website "
     "of Dennis Charles (Denarixx).\n\n"
-    "LANGUAGE:\n"
-    "- ALWAYS reply in the same language as the last user message.\n"
-    "- If the user writes English, answer in English. If German, answer in German, etc.\n\n"
+    "LANGUAGE RULES:\n"
+    "- You will receive a language code like EN, DE, ES, AR, etc.\n"
+    "- ALWAYS reply ONLY in that language code, even if the user mixes other languages.\n"
+    "- Do NOT switch languages by yourself.\n\n"
     "SCOPE:\n"
     "- You can talk about: Dennis’ background, mindset, skills, Denarixx projects, "
     "and the content visible on the site.\n"
@@ -57,14 +58,18 @@ class ChatResponse(BaseModel):
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(payload: ChatRequest):
-    lang = payload.detected_language or "EN"
+    # Normalize language code (e.g. "en" -> "EN")
+    lang = (payload.detected_language or "EN").upper()
 
     # Build prompt for Matrix X simple `?query=` API
     prompt = (
         SYSTEM_PROMPT
-        + f"User language code (hint): {lang}\n"
-        + f"User: {payload.message}\n"
-        + "Assistant:"
+        + f"User language code: {lang}\n"
+        + "IMPORTANT:\n"
+        + f"- You MUST reply ONLY in the language matching this code: {lang}.\n"
+        + "- Do NOT switch languages, even if the user mixes words.\n\n"
+        + f"User ({lang}): {payload.message}\n"
+        + f"Assistant ({lang}):"
     )
 
     params = {
