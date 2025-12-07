@@ -21,7 +21,7 @@ app.add_middleware(
 MATRIX_COMPLETIONS_URL = "https://firebase-ai-models.matrixzat99.workers.dev/chat/completions"
 MATRIX_MODEL = "gpt-4o-mini"
 
-# Base system prompt (language logic is here, *not* in code)
+# Base system prompt
 SYSTEM_PROMPT = (
     "You are DennisChat, the official AI assistant on the personal website "
     "of Dennis Charles (Denarixx).\n\n"
@@ -54,7 +54,7 @@ SYSTEM_PROMPT = (
 
 class ChatRequest(BaseModel):
     message: str
-    detected_language: Optional[str] = None  # we accept it but DO NOT depend on it
+    detected_language: Optional[str] = None  # ignored, model detects language itself
 
 
 class ChatResponse(BaseModel):
@@ -67,7 +67,7 @@ async def chat_endpoint(payload: ChatRequest):
     Main DennisChat endpoint.
 
     We let the model detect the language from payload.message itself.
-    We only provide SYSTEM_PROMPT + user message as OpenAI-style chat.
+    We send SYSTEM_PROMPT + user message as OpenAI-style chat.
     """
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -102,20 +102,14 @@ async def chat_endpoint(payload: ChatRequest):
         # Not JSON – just return raw text
         return ChatResponse(reply=r.text)
 
-    # Expecting OpenAI-like:
-    # {
-    #   "choices": [
-    #     { "message": { "role": "assistant", "content": "..." } }
-    #   ],
-    #   ...
-    # }
+    # Expecting OpenAI-like data
     reply = None
 
     if isinstance(data, dict):
         try:
             reply = data["choices"][0]["message"]["content"]
         except Exception:
-            # Try a few fallbacks for different shapes
+            # Fallbacks for other shapes
             reply = (
                 data.get("reply")
                 or data.get("response")
@@ -123,13 +117,13 @@ async def chat_endpoint(payload: ChatRequest):
             )
 
     if not reply:
-        # As a very last resort
+        # Last resort
         reply = str(data)
 
     return ChatResponse(reply=reply.strip())
 
 
-# Optional: avoid 404 on "/" (health check)
+# Health check
 @app.get("/")
 def root():
     return {"status": "ok", "message": "DennisChat backend is running."}
