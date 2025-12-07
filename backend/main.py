@@ -8,10 +8,15 @@ import httpx
 
 app = FastAPI()
 
-# --- CORS: allow your frontend to call this backend from localhost / file ---
+# --- CORS: allow your frontend to call this backend from denarixx.com + local dev ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # you can restrict later if you want
+    allow_origins=[
+        "https://denarixx.com",
+        "https://www.denarixx.com",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
