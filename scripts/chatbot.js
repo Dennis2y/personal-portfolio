@@ -1,7 +1,10 @@
-// scripts/chatbot.js – DennisChat via FastAPI backend (no direct Matrix call in browser)
+// scripts/chatbot.js – DennisChat → FastAPI backend on Render (multilingual)
 
+// IIFE wrapper
 (function () {
+  // ✅ Your FastAPI backend on Render
   const API_URL = "https://dennischat-backend.onrender.com/chat";
+  console.log("🔥 DennisChat JS loaded – API_URL =", API_URL);
 
   const launcher   = document.getElementById("chat-launcher");
   const chatWindow = document.getElementById("chat-window");
@@ -17,32 +20,38 @@
 
   let isSending = false;
 
-    // ---------- LANGUAGE DETECTOR (hint only) ----------
+  // ---------- LANGUAGE DETECTOR (hint only) ----------
   function detectLanguage(text) {
-    const t = text.toLowerCase();
+    const t = (text || "").toLowerCase().trim();
 
-    // Strong signals by alphabet
+    // 1) Strong signals by alphabet
     if (/[ء-ي]/.test(text)) return "AR"; // Arabic
-    if (/[а-яё]/i.test(text)) return "RU"; // Cyrillic
-    if (/[\u4e00-\u9fff]/.test(text)) return "ZH"; // Chinese
-    if (/[अ-ह]/.test(text)) return "HI"; // Devanagari
+    if (/[а-яё]/i.test(text)) return "RU"; // Cyrillic (Russian, etc.)
+    if (/[\u4e00-\u9fff]/.test(text)) return "ZH"; // Chinese characters
+    if (/[अ-ह]/.test(text)) return "HI"; // Devanagari (Hindi, etc.)
 
-    // Explicit language keywords
-    if (/hallo|tschüss|danke|ß|ä|ö|ü/.test(t)) return "DE";
-    if (/bonjour|merci|fran\u00e7ais|ç|é|è|à/.test(t)) return "FR";
-    if (/hola|gracias|espa\u00f1ol|¿|¡|ñ/.test(t)) return "ES";
-    if (/ciao|grazie|italiano/.test(t)) return "IT";
-    if (/olá|obrigado|português/.test(t)) return "PT";
-
-    // Common English greetings / phrases
-    if (/hello|^hi\b|hey\b|good morning|good afternoon|good evening/.test(t)) {
+    // 2) Explicit ENGLISH greetings & phrases
+    if (
+      /^(hi|hello|hey)\b/.test(t) ||
+      /good\s+morning/.test(t) ||
+      /good\s+afternoon/.test(t) ||
+      /good\s+evening/.test(t) ||
+      /how are you/.test(t) ||
+      /what'?s up/.test(t)
+    ) {
       return "EN";
     }
 
-    // DEFAULT: if nothing else matched, assume English
+    // 3) Explicit language keywords
+    if (/hallo|tschüss|danke|ß|ä|ö|ü/.test(t)) return "DE"; // German
+    if (/bonjour|merci|fran\u00e7ais|ç|é|è|à/.test(t)) return "FR"; // French
+    if (/hola|gracias|espa\u00f1ol|¿|¡|ñ/.test(t)) return "ES"; // Spanish
+    if (/ciao|grazie|italiano/.test(t)) return "IT";            // Italian
+    if (/olá|ola|obrigado|português/.test(t)) return "PT";      // Portuguese
+
+    // 4) Fallback: EN as safe default
     return "EN";
   }
-
 
   // ---------- UI HELPERS ----------
   function scrollToBottom() {
@@ -122,6 +131,10 @@
     botBubble.textContent = "Thinking…";
 
     const langCode = detectLanguage(rawText);
+    console.log("[DennisChat] Outgoing message:", {
+      text: rawText,
+      detected_language: langCode,
+    });
 
     setSendingState(true);
 
@@ -131,8 +144,8 @@
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: rawText,
-          detected_language: langCode
-        })
+          detected_language: langCode,
+        }),
       });
 
       if (!res.ok) {
