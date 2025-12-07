@@ -1,0 +1,68 @@
+{
+  "nav.about": "About",
+  "nav.services": "What I Do",
+  "nav.work": "Work",
+  "nav.story": "Story",
+  "nav.contact": "Contact",
+
+  "hero.tag": "AI • Automation • Digital Systems",
+  "hero.title.part1": "I design",
+  "hero.title.part2": "intelligent systems",
+  "hero.title.part3": "with a cinematic, modern feel.",
+  "hero.subtitle": "I’m Dennis Charles – an AI-driven founder and digital creator. I explore how automation, design and strategy can work together to make life and business feel calmer, smarter and more human.",
+  "hero.btn.work": "View my work",
+  "hero.btn.contact": "Say hello",
+  "hero.meta.location": "Germany · Global mindset",
+  "hero.meta.focus": "AI tools · Automation · Digital experiences",
+
+  "strip.1": "AI-assisted thinking",
+  "strip.2": "Automation & workflows",
+  "strip.3": "Digital experience design",
+  "strip.4": "Quiet long-term building",
+
+  "about.title": "Who I am",
+  "about.lead": "I’m a builder at heart. I think in systems, interfaces and long-term ecosystems.",
+  "about.p1": "My work blends AI, automation and digital product design. I care about creating experiences that feel cinematic and modern on the surface, but extremely practical underneath.",
+  "about.mindset": "Long-term, calm, detail-obsessed.",
+  "about.tools": "Python, modern web, automation, dashboards.",
+  "about.style": "Neon cinematic UI, clean typography.",
+  "about.focus": "Turning complexity into simplicity.",
+
+  "services.title": "What I do",
+  "services.ai": "AI-aware tools",
+  "services.ai.desc": "Products that use AI quietly and respectfully.",
+  "services.design": "Digital experience design",
+  "services.design.desc": "Clean dashboards, elegant interfaces.",
+  "services.automation": "Automation & workflows",
+  "services.automation.desc": "Turning chaos into calm systems.",
+  "services.advice": "Advisory",
+  "services.advice.desc": "1:1 guidance without exposing private ideas.",
+
+  "projects.title": "Selected directions",
+  "projects.subtitle": "A snapshot of my creative direction — the deeper work stays private.",
+  "projects.dash": "Decision-support dashboards",
+  "projects.dash.desc": "Turning raw data into clear stories.",
+  "projects.auto": "Creative automation",
+  "projects.auto.desc": "Systems that save time and reduce stress.",
+  "projects.exp": "Digital experiences",
+  "projects.exp.desc": "Neon UI, smooth flows, modern energy.",
+
+  "story.title": "My story, briefly",
+  "story.lead": "My path wasn't easy. But it made me strong.",
+  "story.p1": "I’ve crossed borders, survived dangerous paths and rebuilt my life. Today I build systems that bring calm, clarity and direction.",
+  "story.quote": "“I turned survival into strategy — and now I design systems for clarity.”",
+
+  "gallery.title": "Visual Moodboard",
+  "gallery.subtitle": "A curated set of modern neon-tech visuals matching my creative direction.",
+
+  "contact.title": "Let’s talk privately",
+  "contact.lead": "If my mindset resonates, reach out.",
+  "contact.name": "Name",
+  "contact.email": "Email",
+  "contact.reason": "Reason",
+  "contact.msg": "Message",
+  "contact.btn": "Send message",
+  "contact.location": "Germany · global",
+
+  "footer.rights": "All rights reserved."
+}

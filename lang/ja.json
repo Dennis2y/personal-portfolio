@@ -1,0 +1,68 @@
+{
+  "nav.about": "私について",
+  "nav.services": "提供内容",
+  "nav.work": "実績",
+  "nav.story": "ストーリー",
+  "nav.contact": "お問い合わせ",
+
+  "hero.tag": "AI • オートメーション • デジタルシステム",
+  "hero.title.part1": "私は",
+  "hero.title.part2": "インテリジェントなシステム",
+  "hero.title.part3": "をシネマティックでモダンな感性でデザインします。",
+  "hero.subtitle": "私はデニス・チャールズ —— AIを中心とした創業者・デジタルクリエイターです。オートメーション、デザイン、戦略がどのように連携し、生活とビジネスをより静かに、賢く、そして人間的にできるのかを探求しています。",
+  "hero.btn.work": "作品を見る",
+  "hero.btn.contact": "お問い合わせ",
+  "hero.meta.location": "ドイツ · グローバルマインド",
+  "hero.meta.focus": "AIツール · オートメーション · デジタル体験",
+
+  "strip.1": "AI支援型思考",
+  "strip.2": "オートメーションとワークフロー",
+  "strip.3": "デジタル体験デザイン",
+  "strip.4": "静かな長期構築",
+
+  "about.title": "私について",
+  "about.lead": "私は本質的に“つくる人”です。システム、インターフェース、長期的なエコシステムで物事を考えます。",
+  "about.p1": "私の仕事はAI、オートメーション、デジタルプロダクトデザインを融合させています。表面はシネマティックでモダン、内部は非常に実用的な体験を作ることを大切にしています。",
+  "about.mindset": "長期志向、静か、ディテール重視。",
+  "about.tools": "Python、モダンWeb、オートメーション、ダッシュボード。",
+  "about.style": "ネオン×シネマティックなUI、クリーンなタイポグラフィ。",
+  "about.focus": "複雑さをシンプルに変換すること。",
+
+  "services.title": "提供内容",
+  "services.ai": "AI対応ツール",
+  "services.ai.desc": "静かに、敬意を持ってAIを扱うプロダクト。",
+  "services.design": "デジタル体験デザイン",
+  "services.design.desc": "クリーンなダッシュボード、洗練されたUI。",
+  "services.automation": "オートメーションとワークフロー",
+  "services.automation.desc": "混乱を静かなシステムへと変換。",
+  "services.advice": "アドバイザリー",
+  "services.advice.desc": "個別ガイダンス。秘密のアイデアを公開しません。",
+
+  "projects.title": "選択された方向性",
+  "projects.subtitle": "私のクリエイティブ方向性のスナップショット —— 深い部分は非公開のまま。",
+  "projects.dash": "意思決定ダッシュボード",
+  "projects.dash.desc": "生データを明確なストーリーへ変換。",
+  "projects.auto": "クリエイティブオートメーション",
+  "projects.auto.desc": "時間を節約し、ストレスを減らすシステム。",
+  "projects.exp": "デジタル体験",
+  "projects.exp.desc": "ネオンUI、スムーズなフロー、モダンなエネルギー。",
+
+  "story.title": "私のストーリー（簡潔版）",
+  "story.lead": "私の道のりは簡単ではありませんでした。しかし、それが私を強くしました。",
+  "story.p1": "国境を越え、危険な道を生き抜き、人生を再構築してきました。今は、静けさと明確さをもたらすシステムを作っています。",
+  "story.quote": "「私は生存を戦略へと変えた —— 今は“明確さのためのシステム”をデザインしている。」",
+
+  "gallery.title": "ビジュアルムードボード",
+  "gallery.subtitle": "私のクリエイティブ方向性に合った最新のネオン・テックビジュアル。",
+
+  "contact.title": "プライベートに話しましょう",
+  "contact.lead": "もし私の考え方に共鳴したなら、ご連絡ください。",
+  "contact.name": "名前",
+  "contact.email": "メールアドレス",
+  "contact.reason": "理由",
+  "contact.msg": "メッセージ",
+  "contact.btn": "送信",
+  "contact.location": "ドイツ · グローバル",
+
+  "footer.rights": "全著作権所有。"
+}

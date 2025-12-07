@@ -1,0 +1,68 @@
+{
+  "nav.about": "À propos",
+  "nav.services": "Ce que je fais",
+  "nav.work": "Travaux",
+  "nav.story": "Histoire",
+  "nav.contact": "Contact",
+
+  "hero.tag": "IA • Automatisation • Systèmes numériques",
+  "hero.title.part1": "Je crée",
+  "hero.title.part2": "des systèmes intelligents",
+  "hero.title.part3": "au style cinématique et moderne.",
+  "hero.subtitle": "Je suis Dennis Charles – fondateur orienté IA et créateur digital. J’explore comment l’automatisation, le design et la stratégie peuvent rendre la vie et le business plus calmes, plus clairs et plus humains.",
+  "hero.btn.work": "Voir mon travail",
+  "hero.btn.contact": "Me contacter",
+  "hero.meta.location": "Allemagne · Vision globale",
+  "hero.meta.focus": "Outils IA · Automatisation · Expériences digitales",
+
+  "strip.1": "Pensée assistée par IA",
+  "strip.2": "Automatisation & workflows",
+  "strip.3": "Design d’expériences digitales",
+  "strip.4": "Construction calme et durable",
+
+  "about.title": "Qui je suis",
+  "about.lead": "Je suis avant tout un bâtisseur. Je pense en systèmes, en interfaces et en écosystèmes durables.",
+  "about.p1": "Mon travail associe IA, automatisation et design produit digital. Je veux créer des expériences à la fois cinématiques, modernes et profondément pratiques.",
+  "about.mindset": "Long terme, calme, obsession du détail.",
+  "about.tools": "Python, web moderne, automatisation, dashboards.",
+  "about.style": "UI néon cinématique, typographie élégante.",
+  "about.focus": "Transformer la complexité en simplicité.",
+
+  "services.title": "Ce que je fais",
+  "services.ai": "Outils conscients de l’IA",
+  "services.ai.desc": "Des produits qui utilisent l’IA avec discrétion et respect.",
+  "services.design": "Design d’expériences digitales",
+  "services.design.desc": "Interfaces élégantes, dashboards épurés.",
+  "services.automation": "Automatisation & workflows",
+  "services.automation.desc": "Transformer le chaos en systèmes calmes.",
+  "services.advice": "Conseil",
+  "services.advice.desc": "Accompagnement 1:1 sans exposer les idées privées.",
+
+  "projects.title": "Directions sélectionnées",
+  "projects.subtitle": "Un aperçu de ma direction créative — le travail profond reste privé.",
+  "projects.dash": "Dashboards de décision",
+  "projects.dash.desc": "Transformer les données brutes en histoires claires.",
+  "projects.auto": "Automatisation créative",
+  "projects.auto.desc": "Des systèmes qui font gagner du temps et réduisent le stress.",
+  "projects.exp": "Expériences digitales",
+  "projects.exp.desc": "UI néon, flux fluides, énergie moderne.",
+
+  "story.title": "Mon histoire, en bref",
+  "story.lead": "Mon chemin n’a pas été simple. Mais il m’a rendu fort.",
+  "story.p1": "J’ai traversé des frontières, survécu à des passages dangereux et reconstruit ma vie. Aujourd’hui je crée des systèmes qui apportent calme, clarté et direction.",
+  "story.quote": "« J’ai transformé la survie en stratégie — maintenant je crée des systèmes pour la clarté. »",
+
+  "gallery.title": "Moodboard visuel",
+  "gallery.subtitle": "Une sélection visuelle néon-tech en harmonie avec ma direction créative.",
+
+  "contact.title": "Parlons en privé",
+  "contact.lead": "Si ma vision résonne avec vous, contactez-moi.",
+  "contact.name": "Nom",
+  "contact.email": "E-mail",
+  "contact.reason": "Motif",
+  "contact.msg": "Message",
+  "contact.btn": "Envoyer le message",
+  "contact.location": "Allemagne · global",
+
+  "footer.rights": "Tous droits réservés."
+}

@@ -1,0 +1,68 @@
+{
+  "nav.about": "O mně",
+  "nav.services": "Co dělám",
+  "nav.work": "Práce",
+  "nav.story": "Příběh",
+  "nav.contact": "Kontakt",
+
+  "hero.tag": "AI • Automatizace • Digitální systémy",
+  "hero.title.part1": "Navrhuji",
+  "hero.title.part2": "inteligentní systémy",
+  "hero.title.part3": "s moderním, filmovým stylem.",
+  "hero.subtitle": "Jsem Dennis Charles – zakladatel poháněný AI a digitální tvůrce. Zkoumám, jak automatizace, design a strategie mohou přinést více klidu, jasnosti a lidskosti do života i podnikání.",
+  "hero.btn.work": "Zobrazit práci",
+  "hero.btn.contact": "Napsat",
+  "hero.meta.location": "Německo · Globální myšlení",
+  "hero.meta.focus": "AI nástroje · Automatizace · Digitální zážitky",
+
+  "strip.1": "Myšlení s podporou AI",
+  "strip.2": "Automatizace & workflows",
+  "strip.3": "Návrh digitálních zážitků",
+  "strip.4": "Klidná dlouhodobá tvorba",
+
+  "about.title": "Kdo jsem",
+  "about.lead": "V jádru jsem stavitel. Přemýšlím v systémech, rozhraních a ekosystémech.",
+  "about.p1": "Moje práce kombinuje AI, automatizaci a digitální produktový design. Chci vytvářet moderní, filmové a praktické zážitky.",
+  "about.mindset": "Dlouhodobý klid, detailní přístup.",
+  "about.tools": "Python, moderní web, automatizace, dashboardy.",
+  "about.style": "Neon filmové UI, čistá typografie.",
+  "about.focus": "Zjednodušení složitosti.",
+
+  "services.title": "Co dělám",
+  "services.ai": "AI-vědomé nástroje",
+  "services.ai.desc": "Produkty, které používají AI tiše a s respektem.",
+  "services.design": "Design digitálních zážitků",
+  "services.design.desc": "Elegantní rozhraní a čisté dashboardy.",
+  "services.automation": "Automatizace & workflows",
+  "services.automation.desc": "Proměna chaosu v strukturované systémy.",
+  "services.advice": "Poradenství",
+  "services.advice.desc": "Individuální vedení bez sdílení soukromých nápadů.",
+
+  "projects.title": "Vybrané směry",
+  "projects.subtitle": "Momentka mého kreativního směřování — hlubší práce zůstává soukromá.",
+  "projects.dash": "Rozhodovací dashboardy",
+  "projects.dash.desc": "Proměna dat v jasné příběhy.",
+  "projects.auto": "Kreativní automatizace",
+  "projects.auto.desc": "Systémy, které šetří čas a snižují stres.",
+  "projects.exp": "Digitální zážitky",
+  "projects.exp.desc": "Neon UI, plynulé toky, moderní energie.",
+
+  "story.title": "Můj příběh, krátce",
+  "story.lead": "Moje cesta nebyla snadná. Ale posílila mě.",
+  "story.p1": "Překročil jsem hranice, přežil nebezpečné cesty a znovu si vybudoval život. Dnes tvořím systémy, které přinášejí klid a jasnost.",
+  "story.quote": "“Proměnil jsem přežití ve strategii — nyní navrhuji systémy pro jasnost.”",
+
+  "gallery.title": "Vizuální moodboard",
+  "gallery.subtitle": "Kolekce neon-tech vizuálů odpovídající mému kreativnímu směru.",
+
+  "contact.title": "Promluvme si soukromě",
+  "contact.lead": "Pokud se moje energie shoduje s tou vaší, ozvěte se.",
+  "contact.name": "Jméno",
+  "contact.email": "Email",
+  "contact.reason": "Důvod",
+  "contact.msg": "Zpráva",
+  "contact.btn": "Odeslat",
+  "contact.location": "Německo · globálně",
+
+  "footer.rights": "Všechna práva vyhrazena."
+}

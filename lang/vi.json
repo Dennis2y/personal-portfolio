@@ -1,0 +1,68 @@
+{
+  "nav.about": "Giới thiệu",
+  "nav.services": "Tôi làm gì",
+  "nav.work": "Công việc",
+  "nav.story": "Câu chuyện",
+  "nav.contact": "Liên hệ",
+
+  "hero.tag": "AI • Tự động hóa • Hệ thống số",
+  "hero.title.part1": "Tôi thiết kế",
+  "hero.title.part2": "các hệ thống thông minh",
+  "hero.title.part3": "với cảm giác điện ảnh và hiện đại.",
+  "hero.subtitle": "Tôi là Dennis Charles – một nhà sáng lập và nhà sáng tạo kỹ thuật số được dẫn dắt bởi AI. Tôi khám phá cách tự động hóa, thiết kế và chiến lược có thể kết hợp để khiến cuộc sống và công việc trở nên bình tĩnh hơn, thông minh hơn và nhân văn hơn.",
+  "hero.btn.work": "Xem công việc",
+  "hero.btn.contact": "Gửi lời chào",
+  "hero.meta.location": "Đức · Tư duy toàn cầu",
+  "hero.meta.focus": "Công cụ AI · Tự động hóa · Trải nghiệm số",
+
+  "strip.1": "Tư duy hỗ trợ bởi AI",
+  "strip.2": "Tự động hóa và quy trình",
+  "strip.3": "Thiết kế trải nghiệm số",
+  "strip.4": "Xây dựng dài hạn, yên tĩnh",
+
+  "about.title": "Tôi là ai",
+  "about.lead": "Tôi là người xây dựng trong bản chất. Tôi nghĩ bằng hệ thống, giao diện và hệ sinh thái dài hạn.",
+  "about.p1": "Công việc của tôi kết hợp AI, tự động hóa và thiết kế sản phẩm số. Tôi tạo ra trải nghiệm trông hiện đại và điện ảnh nhưng cực kỳ thực tiễn bên trong.",
+  "about.mindset": "Dài hạn, bình tĩnh, chú trọng chi tiết.",
+  "about.tools": "Python, web hiện đại, tự động hóa, dashboard.",
+  "about.style": "Giao diện neon điện ảnh, kiểu chữ tinh gọn.",
+  "about.focus": "Biến phức tạp thành đơn giản.",
+
+  "services.title": "Tôi làm gì",
+  "services.ai": "Công cụ có nhận thức AI",
+  "services.ai.desc": "Sản phẩm sử dụng AI một cách tinh tế và tôn trọng.",
+  "services.design": "Thiết kế trải nghiệm số",
+  "services.design.desc": "Dashboard sạch, giao diện thanh lịch.",
+  "services.automation": "Tự động hóa và quy trình",
+  "services.automation.desc": "Biến hỗn loạn thành hệ thống bình tĩnh.",
+  "services.advice": "Tư vấn",
+  "services.advice.desc": "Hướng dẫn 1:1 mà không lộ ý tưởng riêng tư.",
+
+  "projects.title": "Các hướng đi đã chọn",
+  "projects.subtitle": "Một cái nhìn nhanh về định hướng sáng tạo — phần sâu hơn vẫn là riêng tư.",
+  "projects.dash": "Dashboard hỗ trợ ra quyết định",
+  "projects.dash.desc": "Biến dữ liệu thô thành câu chuyện rõ ràng.",
+  "projects.auto": "Tự động hóa sáng tạo",
+  "projects.auto.desc": "Các hệ thống tiết kiệm thời gian và giảm căng thẳng.",
+  "projects.exp": "Trải nghiệm số",
+  "projects.exp.desc": "Neon UI, luồng mượt mà, năng lượng hiện đại.",
+
+  "story.title": "Câu chuyện của tôi (ngắn gọn)",
+  "story.lead": "Con đường của tôi không dễ dàng, nhưng nó khiến tôi mạnh mẽ hơn.",
+  "story.p1": "Tôi đã vượt qua biên giới, sống sót qua những hành trình nguy hiểm và xây dựng lại cuộc đời. Giờ đây tôi xây dựng hệ thống mang lại sự bình tĩnh và rõ ràng.",
+  "story.quote": "“Tôi biến sinh tồn thành chiến lược — và bây giờ tôi thiết kế các hệ thống để mang đến sự rõ ràng.”",
+
+  "gallery.title": "Moodboard hình ảnh",
+  "gallery.subtitle": "Một bộ hình neon-tech hiện đại phù hợp với định hướng sáng tạo của tôi.",
+
+  "contact.title": "Hãy nói chuyện riêng",
+  "contact.lead": "Nếu bạn cảm thấy đồng điệu với tư duy của tôi, hãy liên hệ.",
+  "contact.name": "Tên",
+  "contact.email": "Email",
+  "contact.reason": "Lý do",
+  "contact.msg": "Tin nhắn",
+  "contact.btn": "Gửi tin nhắn",
+  "contact.location": "Đức · Toàn cầu",
+
+  "footer.rights": "Đã đăng ký bản quyền."
+}

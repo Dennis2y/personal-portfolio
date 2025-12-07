@@ -1,0 +1,68 @@
+{
+  "nav.about": "Om mig",
+  "nav.services": "Hvad jeg laver",
+  "nav.work": "Arbejder",
+  "nav.story": "Historie",
+  "nav.contact": "Kontakt",
+
+  "hero.tag": "AI • Automatisering • Digitale systemer",
+  "hero.title.part1": "Jeg designer",
+  "hero.title.part2": "intelligente systemer",
+  "hero.title.part3": "med en moderne, filmisk stemning.",
+  "hero.subtitle": "Jeg er Dennis Charles – AI-drevet founder og digital skaber. Jeg undersøger, hvordan automatisering, design og strategi kan gøre livet og forretning mere roligt, mere klart og mere menneskeligt.",
+  "hero.btn.work": "Se mit arbejde",
+  "hero.btn.contact": "Sig hej",
+  "hero.meta.location": "Tyskland · Global tilgang",
+  "hero.meta.focus": "AI-værktøjer · Automatisering · Digitale oplevelser",
+
+  "strip.1": "AI-assisteret tænkning",
+  "strip.2": "Automatisering & workflows",
+  "strip.3": "Digital oplevelsesdesign",
+  "strip.4": "Rolig, langsigtet opbygning",
+
+  "about.title": "Hvem jeg er",
+  "about.lead": "Jeg er en skaber af natur. Jeg tænker i systemer, interfaces og langsigtede økosystemer.",
+  "about.p1": "Mit arbejde kombinerer AI, automatisering og digitalt produktdesign. Jeg skaber oplevelser, der er både filmiske, moderne og praktiske.",
+  "about.mindset": "Langsigtet, rolig, detaljefokuseret.",
+  "about.tools": "Python, moderne web, automatisering, dashboards.",
+  "about.style": "Neon filmisk UI, ren typografi.",
+  "about.focus": "At gøre kompleksitet enkel.",
+
+  "services.title": "Hvad jeg laver",
+  "services.ai": "AI-bevidste værktøjer",
+  "services.ai.desc": "Produkter, der bruger AI stille og respektfuldt.",
+  "services.design": "Digital oplevelsesdesign",
+  "services.design.desc": "Rene dashboards, elegante interfaces.",
+  "services.automation": "Automatisering & workflows",
+  "services.automation.desc": "Omdanner kaos til klare systemer.",
+  "services.advice": "Rådgivning",
+  "services.advice.desc": "1:1 vejledning uden at afsløre private ideer.",
+
+  "projects.title": "Udvalgte retninger",
+  "projects.subtitle": "Et kig på min kreative retning – det dybeste arbejde holdes privat.",
+  "projects.dash": "Beslutnings-dashboards",
+  "projects.dash.desc": "Omformer data til klare historier.",
+  "projects.auto": "Kreativ automatisering",
+  "projects.auto.desc": "Systemer, der sparer tid og reducerer stress.",
+  "projects.exp": "Digitale oplevelser",
+  "projects.exp.desc": "Neon UI, flydende flows, moderne energi.",
+
+  "story.title": "Min historie, kort",
+  "story.lead": "Min vej var ikke let. Men den gjorde mig stærk.",
+  "story.p1": "Jeg krydsede grænser, overlevede farlige ruter og byggede mit liv op igen. Nu designer jeg systemer, der giver klarhed og ro.",
+  "story.quote": "“Jeg gjorde overlevelse til strategi – nu designer jeg systemer til klarhed.”",
+
+  "gallery.title": "Visuelt moodboard",
+  "gallery.subtitle": "En moderne neon-tech billedsamling, der matcher min kreative retning.",
+
+  "contact.title": "Lad os tale privat",
+  "contact.lead": "Hvis min tilgang resonerer med dig, så kontakt mig.",
+  "contact.name": "Navn",
+  "contact.email": "Email",
+  "contact.reason": "Årsag",
+  "contact.msg": "Besked",
+  "contact.btn": "Send besked",
+  "contact.location": "Tyskland · globalt",
+
+  "footer.rights": "Alle rettigheder forbeholdes."
+}

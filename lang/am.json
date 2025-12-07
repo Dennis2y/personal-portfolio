@@ -1,0 +1,68 @@
+{
+  "nav.about": "ስለ እኔ",
+  "nav.services": "እባክህ የማደርገው",
+  "nav.work": "ስራዎቼ",
+  "nav.story": "ታሪክ",
+  "nav.contact": "አግኙኝ",
+
+  "hero.tag": "AI • ማቀናበር • ዲጂታል ስርዓቶች",
+  "hero.title.part1": "እቅድ እቀርባለሁ",
+  "hero.title.part2": "አውታረ ስርዓት ያላቸውን መስሪያዎች",
+  "hero.title.part3": "በሲኔማዊ፣ ዘመናዊ ቅጥ.",
+  "hero.subtitle": "እኔ Dennis Charles ነኝ — በAI የሚመራ ፈጣሪ እና ዲጂታል መፍጠሪያ ባለሙያ. አውቶማቲክ, ዲዛይን እና ስትራቴጂ በመተባበር ህይወትን እና ንግድን እንዴት እንደሚያሳናቁ እና እንዴት እንደሚያደርጉት ትኩረት እሰጣለሁ.",
+  "hero.btn.work": "ስራዬን ይመልከቱ",
+  "hero.btn.contact": "ተገናኝ",
+  "hero.meta.location": "ጀርመን · ዓለም አቀፍ አመለካከት",
+  "hero.meta.focus": "AI መሳሪያዎች · ማቀናበር · ዲጂታል ተሞክሮዎች",
+
+  "strip.1": "በAI የተደገፈ ማሰብ",
+  "strip.2": "ማቀናበር እና የስራ ሂደቶች",
+  "strip.3": "ዲጂታል ተሞክሮ ንድፍ",
+  "strip.4": "ዝምታ ያለ ረጅም ጊዜ ግንባታ",
+
+  "about.title": "ማን ነኝ",
+  "about.lead": "በመሠረት አቋም ግንባታ የምወዳ ሰው ነኝ። በስርዓቶች፣ በኢንተርፌዞች እና በረዥም ጊዜ ኢኮሲስተሞች እንደምንሰራ እስተውላለሁ።",
+  "about.p1": "AI, ማቀናበር እና ዲጂታል ምርት ንድፍ ስራዬን እንዲዋሃድ እያደረግሁ። በውጭ ዘመናዊ እና ሲኔማዊ የሆነ ተሞክሮ እንዲታይ እና በውስጥ በጣም ተግባራዊ እንዲሆን እጥራለሁ።",
+  "about.mindset": "ረዥም ጊዜ፣ ዝምታ፣ ዝርዝር ተጠንቀቅ.",
+  "about.tools": "Python፣ ዘመናዊ ድር፣ ማቀናበር፣ ዳሽቦርድ",
+  "about.style": "Neon ሲኔማዊ UI፣ ንጹህ typography",
+  "about.focus": "ውስብስብነትን ቀላል መለወጥ",
+
+  "services.title": "እባክህ የማደርገው",
+  "services.ai": "AI የሚያስተዋወቅ መሳሪያዎች",
+  "services.ai.desc": "AIን በጸጥታ እና በክብት የሚጠቀሙ ምርቶች።",
+  "services.design": "ዲጂታል ተሞክሮ ንድፍ",
+  "services.design.desc": "ንጹህ dashboard፣ ታማኝ interface.",
+  "services.automation": "ማቀናበር እና የስራ ሂደት",
+  "services.automation.desc": "ውድቀትን ወደ ዝምታ ስርዓት መቀየር።",
+  "services.advice": "ምክክር",
+  "services.advice.desc": "የግል ሃሳቦችን ሳይገልጹ 1:1 መመሪያ።",
+
+  "projects.title": "የተመረጡ አቅጣጫዎች",
+  "projects.subtitle": "የፈጠራ አቅጣጫዬ አንድ አጭር ዕይታ — የበለጠው ግል ይቀራል።",
+  "projects.dash": "ውሳኔ የሚያገለግሉ ዳሽቦርዶች",
+  "projects.dash.desc": "ዳታ ወደ ግልጽ ታሪክ መቀየር።",
+  "projects.auto": "ፈጠራ ማቀናበር",
+  "projects.auto.desc": "ጊዜ የሚያቆጥቡ እና ጭንቀት የሚቀንሱ ስርዓቶች።",
+  "projects.exp": "ዲጂታል ተሞክሮዎች",
+  "projects.exp.desc": "Neon UI፣ ቀላል ፍሰት፣ ዘመናዊ ኃይል።",
+
+  "story.title": "ታሪኬ (አጭር)",
+  "story.lead": "መንገዴ ቀላል አልነበረም — ግን አበረከተኝ።",
+  "story.p1": "ድንበሮችን ተሻግሜ አደገኛ መንገዶችን አሸንፌ ሕይወቴን  занደግሔ. አሁን ጸጥታ እና ግልጽነት የሚያመጡ ስርዓቶችን እገነባለሁ።",
+  "story.quote": "“ትረካን ወደ ስትራቴጂ አድርጌታለሁ — አሁን ለግልጽነት ስርዓት እገነባለሁ።”",
+
+  "gallery.title": "የምስል ሞድቦርድ",
+  "gallery.subtitle": "ከእኔ የፈጠራ አቅጣጫ ጋር የሚጣጣሙ ዘመናዊ neon-tech ምስሎች።",
+
+  "contact.title": "በግል እንወያይ",
+  "contact.lead": "አመለካከቴ ከእርስዎ ጋር ከተጣጣመ፣ ያነጋግሩኝ።",
+  "contact.name": "ስም",
+  "contact.email": "ኢሜል",
+  "contact.reason": "ምክንያት",
+  "contact.msg": "መልዕክት",
+  "contact.btn": "መልዕክት ላክ",
+  "contact.location": "ጀርመን · ዓለም አቀፍ",
+
+  "footer.rights": "ሁሉም መብቶች ተይዘዋል።"
+}

@@ -1,0 +1,68 @@
+{
+  "nav.about": "Over mij",
+  "nav.services": "Wat ik doe",
+  "nav.work": "Werk",
+  "nav.story": "Verhaal",
+  "nav.contact": "Contact",
+
+  "hero.tag": "AI • Automatisering • Digitale systemen",
+  "hero.title.part1": "Ik ontwerp",
+  "hero.title.part2": "intelligente systemen",
+  "hero.title.part3": "met een filmische, moderne uitstraling.",
+  "hero.subtitle": "Ik ben Dennis Charles – een AI-gedreven founder en digitale creator. Ik onderzoek hoe automatisering, design en strategie samen kunnen werken om leven en business rustiger, slimmer en menselijker te maken.",
+  "hero.btn.work": "Bekijk mijn werk",
+  "hero.btn.contact": "Neem contact op",
+  "hero.meta.location": "Duitsland · Wereldwijde mindset",
+  "hero.meta.focus": "AI-tools · Automatisering · Digitale ervaringen",
+
+  "strip.1": "AI-ondersteund denken",
+  "strip.2": "Automatisering & workflows",
+  "strip.3": "Digital experience design",
+  "strip.4": "Rustige langetermijnontwikkeling",
+
+  "about.title": "Wie ik ben",
+  "about.lead": "Ik ben in hart en ziel een bouwer. Ik denk in systemen, interfaces en lange termijn ecosystemen.",
+  "about.p1": "Mijn werk combineert AI, automatisering en digitaal productdesign. Ik wil ervaringen creëren die modern, filmisch en tegelijk praktisch zijn.",
+  "about.mindset": "Lange termijn, kalm, detailgericht.",
+  "about.tools": "Python, modern web, automatisering, dashboards.",
+  "about.style": "Neon cinematografische UI, heldere typografie.",
+  "about.focus": "Complexiteit omzetten in eenvoud.",
+
+  "services.title": "Wat ik doe",
+  "services.ai": "AI-bewuste tools",
+  "services.ai.desc": "Producten die AI stil en respectvol gebruiken.",
+  "services.design": "Digital experience design",
+  "services.design.desc": "Strakke dashboards, elegante interfaces.",
+  "services.automation": "Automatisering & workflows",
+  "services.automation.desc": "Chaos omzetten in rustige systemen.",
+  "services.advice": "Advies",
+  "services.advice.desc": "1:1 begeleiding zonder privé-ideeën te onthullen.",
+
+  "projects.title": "Geselecteerde richtingen",
+  "projects.subtitle": "Een momentopname van mijn creatieve richting — het diepere werk blijft privé.",
+  "projects.dash": "Decision-support dashboards",
+  "projects.dash.desc": "Ruwe data omzetten in duidelijke verhalen.",
+  "projects.auto": "Creatieve automatisering",
+  "projects.auto.desc": "Systemen die tijd besparen en stress verminderen.",
+  "projects.exp": "Digitale ervaringen",
+  "projects.exp.desc": "Neon UI, vloeiende processen, moderne energie.",
+
+  "story.title": "Mijn verhaal, kort",
+  "story.lead": "Mijn pad was niet eenvoudig. Maar het heeft me sterk gemaakt.",
+  "story.p1": "Ik heb grenzen overgestoken, gevaarlijke routes overleefd en mijn leven opnieuw opgebouwd. Nu ontwikkel ik systemen die rust, helderheid en richting brengen.",
+  "story.quote": "“Ik veranderde overleven in strategie — nu ontwerp ik systemen voor helderheid.”",
+
+  "gallery.title": "Visueel moodboard",
+  "gallery.subtitle": "Een verzameling moderne neon-tech beelden die mijn creatieve richting weerspiegelen.",
+
+  "contact.title": "Laten we privé praten",
+  "contact.lead": "Als mijn mindset met je resoneert, neem contact op.",
+  "contact.name": "Naam",
+  "contact.email": "E-mail",
+  "contact.reason": "Reden",
+  "contact.msg": "Bericht",
+  "contact.btn": "Versturen",
+  "contact.location": "Duitsland · wereldwijd",
+
+  "footer.rights": "Alle rechten voorbehouden."
+}

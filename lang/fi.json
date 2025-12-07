@@ -1,0 +1,68 @@
+{
+  "nav.about": "Minusta",
+  "nav.services": "Mitä teen",
+  "nav.work": "Työt",
+  "nav.story": "Tarina",
+  "nav.contact": "Yhteys",
+
+  "hero.tag": "AI • Automaatio • Digitaaliset järjestelmät",
+  "hero.title.part1": "Suunnittelen",
+  "hero.title.part2": "älykkäitä järjestelmiä",
+  "hero.title.part3": "modernilla, elokuvallisella otteella.",
+  "hero.subtitle": "Olen Dennis Charles – tekoälyä hyödyntävä perustaja ja digitaalinen luoja. Tutkin, miten automaatio, muotoilu ja strategia voivat tehdä elämästä ja työstä rauhallisempaa, selkeämpää ja inhimillisempää.",
+  "hero.btn.work": "Näytä työni",
+  "hero.btn.contact": "Ota yhteyttä",
+  "hero.meta.location": "Saksa · Globaali ajattelu",
+  "hero.meta.focus": "AI-työkalut · Automaatio · Digitaaliset kokemukset",
+
+  "strip.1": "AI-avusteinen ajattelu",
+  "strip.2": "Automaatio & työnkulut",
+  "strip.3": "Digitaalinen kokemussuunnittelu",
+  "strip.4": "Rauhallinen pitkäjänteinen rakentaminen",
+
+  "about.title": "Kuka olen",
+  "about.lead": "Olen rakentaja sydämeltäni. Ajattelen järjestelmissä ja ekosysteemeissä.",
+  "about.p1": "Työni yhdistää tekoälyn, automaation ja digitaalisen tuotesuunnittelun. Haluan luoda kokemuksia, jotka ovat moderneja, elokuvallisia ja käytännöllisiä.",
+  "about.mindset": "Pitkäjänteinen, rauhallinen, yksityiskohtainen.",
+  "about.tools": "Python, moderni web, automaatio, dashboardit.",
+  "about.style": "Neon-elokuvallinen UI, selkeä typografia.",
+  "about.focus": "Monimutkaisuuden muuttaminen yksinkertaiseksi.",
+
+  "services.title": "Mitä teen",
+  "services.ai": "AI-tietoiset työkalut",
+  "services.ai.desc": "Tuotteita, jotka käyttävät tekoälyä hillitysti ja kunnioittavasti.",
+  "services.design": "Digitaalinen kokemussuunnittelu",
+  "services.design.desc": "Tyylikkäitä käyttöliittymiä ja selkeitä dashboardeja.",
+  "services.automation": "Automaatio & työnkulut",
+  "services.automation.desc": "Muuttaa kaaoksen selkeiksi järjestelmiksi.",
+  "services.advice": "Neuvonta",
+  "services.advice.desc": "1:1 ohjausta ilman yksityisten ideoiden paljastamista.",
+
+  "projects.title": "Valitut suunnat",
+  "projects.subtitle": "Kurkistus luovaan suuntaani — syvällinen työ pysyy yksityisenä.",
+  "projects.dash": "Päätöksenteon dashboardit",
+  "projects.dash.desc": "Muuttavat raakadatasta selkeitä tarinoita.",
+  "projects.auto": "Luova automaatio",
+  "projects.auto.desc": "Järjestelmiä, jotka säästävät aikaa ja vähentävät stressiä.",
+  "projects.exp": "Digitaaliset kokemukset",
+  "projects.exp.desc": "Neon UI, sulavat virrat, moderni energia.",
+
+  "story.title": "Tarina lyhyesti",
+  "story.lead": "Matkani ei ollut helppo. Mutta se teki minusta vahvan.",
+  "story.p1": "Ylitin rajoja, selvisin vaarallisista poluista ja rakensin elämäni uudelleen. Nyt rakennan järjestelmiä, jotka tuovat selkeyttä ja rauhaa.",
+  "story.quote": "“Muutin selviytymisen strategiaksi – nyt suunnittelen järjestelmiä selkeyttä varten.”",
+
+  "gallery.title": "Visuaalinen moodboard",
+  "gallery.subtitle": "Kokoelma neon-tech-visualisointeja, jotka heijastavat luovaa suuntaani.",
+
+  "contact.title": "Puhutaan yksityisesti",
+  "contact.lead": "Jos ajattelutapani resonoi kanssasi, ota yhteyttä.",
+  "contact.name": "Nimi",
+  "contact.email": "Email",
+  "contact.reason": "Aihe",
+  "contact.msg": "Viesti",
+  "contact.btn": "Lähetä",
+  "contact.location": "Saksa · globaali",
+
+  "footer.rights": "Kaikki oikeudet pidätetään."
+}

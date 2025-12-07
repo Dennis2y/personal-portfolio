@@ -1,0 +1,68 @@
+{
+  "nav.about": "Tungkol",
+  "nav.services": "Ano ang Ginagawa Ko",
+  "nav.work": "Trabaho",
+  "nav.story": "Kuwento",
+  "nav.contact": "Kontak",
+
+  "hero.tag": "AI • Awtomasyon • Digital Systems",
+  "hero.title.part1": "Dinisenyo ko ang",
+  "hero.title.part2": "matalinong sistema",
+  "hero.title.part3": "na may cinematic at modernong estilo.",
+  "hero.subtitle": "Ako si Dennis Charles — isang AI-driven founder at digital creator. Sinusuri ko kung paano nagtutulungan ang automation, disenyo at strategy upang gawing mas kalmado, mas matalino at mas makatao ang buhay at negosyo.",
+  "hero.btn.work": "Tingnan ang aking trabaho",
+  "hero.btn.contact": "Magpadala ng mensahe",
+  "hero.meta.location": "Germany · Global mindset",
+  "hero.meta.focus": "AI tools · Automation · Digital experiences",
+
+  "strip.1": "Pag-iisip na may tulong ng AI",
+  "strip.2": "Automation & workflows",
+  "strip.3": "Disenyo ng digital experience",
+  "strip.4": "Tahimik na long-term na pagbuo",
+
+  "about.title": "Sino Ako",
+  "about.lead": "Isa akong builder sa aking core. Naiisip ko ang mga bagay sa pamamagitan ng systems, interfaces at long-term ecosystems.",
+  "about.p1": "Pinaghalo ko ang AI, automation at digital product design. Nililikha ko ang mga karanasang mukhang cinematic at modern ngunit praktikal sa loob.",
+  "about.mindset": "Long-term, kalmado, maingat sa detalye.",
+  "about.tools": "Python, modern web, automation, dashboards.",
+  "about.style": "Neon cinematic UI, malinis na typography.",
+  "about.focus": "Ginagawang simple ang komplikado.",
+
+  "services.title": "Ano ang Ginagawa Ko",
+  "services.ai": "AI-aware tools",
+  "services.ai.desc": "Mga produkto na gumagamit ng AI nang tahimik at may respeto.",
+  "services.design": "Digital experience design",
+  "services.design.desc": "Malilinis na dashboard, eleganteng interface.",
+  "services.automation": "Automation & workflows",
+  "services.automation.desc": "Ginagawang kaayusan ang kaguluhan.",
+  "services.advice": "Payong Propesyonal",
+  "services.advice.desc": "1:1 na gabay na hindi naglalabas ng pribadong ideya.",
+
+  "projects.title": "Piniling Direksyon",
+  "projects.subtitle": "Isang snap ng aking creative direction — ang mas malalim na bahagi ay pribado.",
+  "projects.dash": "Decision-support dashboards",
+  "projects.dash.desc": "Ginagawang malinaw na kuwento ang raw data.",
+  "projects.auto": "Creative automation",
+  "projects.auto.desc": "Mga sistemang nakakatipid ng oras at nagpapababa ng stress.",
+  "projects.exp": "Digital experiences",
+  "projects.exp.desc": "Neon UI, smooth flow, modernong enerhiya.",
+
+  "story.title": "Maikling Kuwento Ko",
+  "story.lead": "Hindi naging madali ang aking daan — pero nagpatibay ito sa akin.",
+  "story.p1": "Tumawid ako ng mga bansa, dumaan sa panganib, at muling binuo ang aking buhay. Ngayon, lumilikha ako ng mga sistemang nagdadala ng katahimikan at linaw.",
+  "story.quote": "“Ginawa kong strategy ang survival — at ngayon gumagawa ako ng systems para sa clarity.”",
+
+  "gallery.title": "Visual Moodboard",
+  "gallery.subtitle": "Mga modernong neon-tech visuals na tumutugma sa aking creative direction.",
+
+  "contact.title": "Mag-usap nang pribado",
+  "contact.lead": "Kung naka-relate ka sa aking mindset, mag-message ka.",
+  "contact.name": "Pangalan",
+  "contact.email": "Email",
+  "contact.reason": "Pakay",
+  "contact.msg": "Mensahe",
+  "contact.btn": "Ipadala",
+  "contact.location": "Germany · Global",
+
+  "footer.rights": "Lahat ng karapatan ay nakalaan."
+}

@@ -1,10 +1,857 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta charset="UTF-8" />
+  <title>Dennis Charles – AI Founder & Digital Creator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Cinematic portfolio of Dennis Charles – AI-driven founder and digital creator working at the intersection of automation, design and strategy."
+  />
+  <meta name="keywords" content="Dennis Charles, Denarixx, AI founder, digital creator, automation, dashboards, intelligent textiles, future mobility, health tech" />
+  <meta name="author" content="Dennis Charles" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Dennis Charles – AI Founder & Digital Creator" />
+  <meta property="og:description" content="AI-driven founder and digital creator working on calm, intelligent systems under the Denarixx ecosystem." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://denarixx.com" />
+  <meta property="og:image" content="images/dennis-portrait-enhanced.png" />
+
+  <!-- JSON-LD SEO (WebSite + Person + Brand) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://denarixx.com/#website",
+        "url": "https://denarixx.com/",
+        "name": "Dennis Charles – AI Founder & Digital Creator",
+        "inLanguage": "en",
+        "description": "Cinematic portfolio of Dennis Charles – AI-driven founder and digital creator working at the intersection of automation, design and strategy.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://denarixx.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://denarixx.com/#person",
+        "name": "Dennis Charles",
+        "jobTitle": "AI Founder & Digital Creator",
+        "url": "https://denarixx.com/",
+        "brand": {
+          "@type": "Brand",
+          "name": "Denarixx"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "DE"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-$END$
+
+<body class="fade-in">
+
+  <!-- ================= PRELOADER ================= -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="preloader-orb"></span>
+        <span class="preloader-text">Denarixx</span>
+      </div>
+      <div class="preloader-bar"><span></span></div>
+      <p class="preloader-caption">
+        Calibrating cinematic systems…
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">Dennis<span>Charles</span></span>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">What I Do</a>
+        <a href="#projects" data-i18n="nav.work">Work</a>
+        <a href="#story" data-i18n="nav.story">Story</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+
+        <!-- 🌍 Language globe -->
+        <div class="lang-control">
+          <button
+            type="button"
+            class="lang-trigger"
+            id="lang-trigger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="globe">🌍</span>
+            <span class="code" id="lang-current-label">EN</span>
+          </button>
+
+          <div class="lang-menu" id="lang-menu" aria-label="Select language">
+            <button class="lang-option" data-lang="en"><span>English</span><span class="code">EN</span></button>
+            <button class="lang-option" data-lang="de"><span>Deutsch</span><span class="code">DE</span></button>
+            <button class="lang-option" data-lang="fr"><span>Français</span><span class="code">FR</span></button>
+            <button class="lang-option" data-lang="es"><span>Español</span><span class="code">ES</span></button>
+            <button class="lang-option" data-lang="it"><span>Italiano</span><span class="code">IT</span></button>
+            <button class="lang-option" data-lang="pt"><span>Português</span><span class="code">PT</span></button>
+            <button class="lang-option" data-lang="ar"><span>العربية</span><span class="code">AR</span></button>
+            <button class="lang-option" data-lang="ru"><span>Русский</span><span class="code">RU</span></button>
+            <button class="lang-option" data-lang="zh"><span>中文</span><span class="code">ZH</span></button>
+            <button class="lang-option" data-lang="hi"><span>हिन्दी</span><span class="code">HI</span></button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero reveal">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="videos/bg1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-video-overlay"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="overline" data-i18n="hero.tag">
+            AI • Automation • Digital Systems
+          </p>
+
+          <h1>
+            <span data-i18n="hero.title.part1">I design</span>
+            <span class="accent" data-i18n="hero.title.part2">intelligent systems</span>
+            <span data-i18n="hero.title.part3">with a cinematic, modern feel.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            I’m <strong>Dennis Charles</strong> — an AI-driven founder and digital creator.
+            I build systems that make life and business feel calmer, smarter, and more human.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.btn.work">
+              View my work
+            </a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero.btn.contact">
+              Say hello
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label" data-i18n="hero.meta.location">
+                Germany · Global mindset
+              </span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label" data-i18n="hero.meta.focus">
+                AI tools · Automation · Digital experiences
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-orbit">
+            <div class="hero-orbit-inner">
+              <figure class="hero-card main">
+                <img
+                  src="images/dennis-portrait-enhanced.png"
+                  alt="Portrait of Dennis Charles"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STRIP ================= -->
+    <section class="strip reveal">
+      <div class="strip-inner">
+        <span data-i18n="strip.1">AI-assisted thinking</span>
+        <span data-i18n="strip.2">Automation & workflows</span>
+        <span data-i18n="strip.3">Digital experience design</span>
+        <span data-i18n="strip.4">Quiet long-term building</span>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section section-about reveal">
+      <div class="container about-inner">
+        <div class="about-text">
+          <div class="section-header">
+            <h2 data-i18n="about.title">Who I am</h2>
+          </div>
+
+          <p class="lead" data-i18n="about.lead">
+            I’m a builder at heart. I think in systems, interfaces and long-term ecosystems.
+          </p>
+
+          <p data-i18n="about.p1">
+            My work blends AI, automation and digital product design. I care about creating
+            experiences that feel cinematic and modern on the surface, but extremely practical underneath.
+          </p>
+
+          <div class="about-grid">
+            <div class="about-chip">
+              <span class="chip-label">Mindset</span>
+              <p data-i18n="about.mindset">Long-term, calm, detail-obsessed.</p>
+            </div>
+
+            <div class="about-chip">
+              <span class="chip-label">Tools</span>
+              <p data-i18n="about.tools">Python, modern web, automation, dashboards.</p>
+            </div>
+
+            <div class="about-chip">
+              <span class="chip-label">Style</span>
+              <p data-i18n="about.style">Neon cinematic UI, clean typography.</p>
+            </div>
+
+            <div class="about-chip">
+              <span class="chip-label">Focus</span>
+              <p data-i18n="about.focus">Turning complexity into simplicity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-media">
+          <figure class="about-photo">
+            <img src="images/neon-desk.png" alt="Neon-lit desk workspace" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section section-services reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="services.title">What I do</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3 data-i18n="services.ai">AI-aware tools</h3>
+            <p data-i18n="services.ai.desc">
+              Products that use AI quietly and respectfully.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 data-i18n="services.design">Digital experience design</h3>
+            <p data-i18n="services.design.desc">
+              Clean dashboards, elegant interfaces.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 data-i18n="services.automation">Automation & workflows</h3>
+            <p data-i18n="services.automation.desc">
+              Turning chaos into calm systems.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 data-i18n="services.advice">Advisory</h3>
+            <p data-i18n="services.advice.desc">
+              1:1 guidance without exposing private ideas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INVESTOR TEXT SECTION ================= -->
+    <section id="invest" class="section section-invest reveal">
+      <div class="container invest-inner">
+        <div class="invest-text">
+          <h2>A Quiet Pipeline of World-Scale Innovations</h2>
+
+          <p class="lead">
+            I’m developing several long-horizon systems under the Denarixx brand —
+            built slowly, privately, and with a clear vision of where the next decade is heading.
+          </p>
+
+          <p>
+            These projects span intelligent heating systems, human-centered health devices,
+            next-generation digital mobility concepts, and a new category of AI-aware consumer electronics.
+          </p>
+
+          <p>
+            They are not public. They are not on social media.
+            Only genuine partners, supporters and investors are invited into the real conversation.
+          </p>
+
+          <div class="invest-highlights">
+            <div class="highlight-item">
+              <h3>⚪ Stealth Hardware</h3>
+              <p>Heating systems, health signals and embedded intelligence.</p>
+            </div>
+
+            <div class="highlight-item">
+              <h3>⚪ Consumer Electronics</h3>
+              <p>Offline-first smart and future personal devices.</p>
+            </div>
+
+            <div class="highlight-item">
+              <h3>⚪ Digital Mobility</h3>
+              <p>A reimagined automotive interior experience.</p>
+            </div>
+
+            <div class="highlight-item">
+              <h3>⚪ Human Health</h3>
+              <p>Wearables and AI coaching for calm, clarity and direction.</p>
+            </div>
+          </div>
+
+          <p class="invest-closing">
+            If you want early access, private previews or strategic collaboration,
+            reach out directly. The real details are only shared in conversation.
+          </p>
+
+          <a href="#contact" class="btn btn-primary">
+            Request Private Conversation →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS (WITH bg2.mp4) ================= -->
+    <section id="projects" class="section section-projects reveal">
+      <video class="section-video" autoplay muted loop playsinline preload="auto">
+        <source src="videos/bg2.mp4" type="video/mp4" />
+      </video>
+      <div class="section-video-overlay"></div>
+
+      <!-- Glow particles (purely visual) -->
+      <div class="particle-layer">
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="projects.title">Selected directions</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">
+            A snapshot of my creative direction — the deeper work stays private.
+          </p>
+        </div>
+
+        <!-- Visible work -->
+        <div class="projects-grid">
+          <article class="project-card">
+            <figure class="project-image">
+              <img
+                src="images/project-neon-dashboards-ultra-visible.png"
+                alt="Neon dashboard design"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <h3 data-i18n="projects.dash">Decision-support dashboards</h3>
+              <p data-i18n="projects.dash.desc">
+                Turning raw data into clear stories.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-image">
+              <img
+                src="images/project-neon-automation-ultra.png"
+                alt="Automation flows preview"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <h3 data-i18n="projects.auto">Creative automation</h3>
+              <p data-i18n="projects.auto.desc">
+                Systems that save time and reduce stress.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-image">
+              <img
+                src="images/project-neon-digital-experiences.png"
+                alt="Digital experience preview"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <h3 data-i18n="projects.exp">Digital experiences</h3>
+              <p data-i18n="projects.exp.desc">
+                Neon UI, smooth flows, modern energy.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Quiet long-term inventions / investor-friendly cards -->
+        <div class="future-intro">
+          <h3 data-i18n="future.title">Quiet long-term inventions (investor-friendly)</h3>
+          <p data-i18n="future.subtitle">
+            Beyond software, I’m building a small family of hardware-rooted systems under the
+            Denarixx ecosystem. Details are intentionally private, but serious partners can request
+            a deeper conversation.
+          </p>
+        </div>
+
+        <div class="projects-grid future-grid">
+          <!-- Denarixx Heating Systems -->
+          <article class="project-card future-card">
+            <figure class="project-image">
+              <img
+                src="images/denarixx-heating-placeholder.png"
+                alt="Denarixx Heating Systems"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <div class="investor-tag">
+                <span class="dot"></span>
+                <span>Stealth R&amp;D</span>
+              </div>
+              <h3>Denarixx Heating Systems</h3>
+              <p>
+                A quiet rethink of how warmth, textiles and intelligent control can work together in
+                daily life. Designed to feel invisible until you need it.
+              </p>
+            </div>
+          </article>
+
+          <!-- Denarixx Smartphone -->
+          <article class="project-card future-card">
+            <figure class="project-image">
+              <img
+                src="images/denarixx-smartphone-placeholder.png"
+                alt="Denarixx Smartphone concept"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <div class="investor-tag">
+                <span class="dot"></span>
+                <span>Concept Stage</span>
+              </div>
+              <h3>Denarixx Smartphone</h3>
+              <p>
+                A long-horizon smartphone direction within the Denarixx ecosystem — explored quietly,
+                focused on future lifestyles rather than today’s app noise. Real details stay private
+                and are only shared in direct conversation.
+              </p>
+            </div>
+          </article>
+
+          <!-- Denarixx Automotive -->
+          <article class="project-card future-card">
+            <figure class="project-image">
+              <img
+                src="images/denarixx-automotive-placeholder.png"
+                alt="Denarixx Automotive vision"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <div class="investor-tag">
+                <span class="dot"></span>
+                <span>Future Platform</span>
+              </div>
+              <h3>Denarixx Automotive</h3>
+              <p>
+                A long-horizon vision for a smart, cinematic interior experience that treats the car
+                as a moving digital space – not just a vehicle.
+              </p>
+            </div>
+          </article>
+
+          <!-- Denarixx Health -->
+          <article class="project-card future-card">
+            <figure class="project-image">
+              <img
+                src="images/denarixx-health-placeholder.png"
+                alt="Denarixx Health concept"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project-body">
+              <div class="investor-tag">
+                <span class="dot"></span>
+                <span>Private Deck</span>
+              </div>
+              <h3>Denarixx Health</h3>
+              <p>
+                A more human way to think about continuous health signals, gentle coaching and
+                doctor-grade visibility – without turning people into data streams.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section id="story" class="section section-story reveal">
+      <div class="container story-inner">
+        <div class="story-text">
+          <div class="section-header">
+            <h2 data-i18n="story.title">My story, briefly</h2>
+          </div>
+
+          <p class="lead" data-i18n="story.lead">
+            My path wasn't easy. But it made me strong.
+          </p>
+
+          <p data-i18n="story.p1">
+            I’ve crossed borders, survived dangerous paths and rebuilt my life. Today I build
+            systems that bring calm, clarity and direction.
+          </p>
+          <p data-i18n="story.p2">
+            I didn't come into tech through the “easy” door. My journey moved through countries,
+            real danger, and moments where continuing wasn’t guaranteed.
+          </p>
+          <p data-i18n="story.p3">
+            Those experiences shaped how I think about time, opportunity, and responsibility.
+            They’re why I build systems that reduce chaos — not create it.
+          </p>
+          <p data-i18n="story.p4">
+            The full story is something I prefer to share in conversation — not in a loud public
+            timeline. If this energy resonates, we can talk.
+          </p>
+        </div>
+
+        <aside class="story-media">
+          <figure class="story-photo">
+            <img
+              src="images/A_high-resolution_digital_photograph_captures_a_ne.png"
+              alt="Neon city symbolizing journey and future"
+              loading="lazy"
+            />
+          </figure>
+          <div class="story-quote" data-i18n="story.quote">
+            “I turned survival into strategy — and now I design systems for clarity.”
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-contact reveal">
+      <div class="container contact-inner">
+        <div class="contact-text">
+          <div class="section-header">
+            <h2 data-i18n="contact.title">Let’s talk privately</h2>
+          </div>
+          <p class="lead" data-i18n="contact.lead">
+            If my mindset resonates, reach out.
+          </p>
+
+          <div class="contact-meta">
+            <div>
+              <span class="meta-label" data-i18n="contact.email.label">Email</span>
+              <a href="mailto:denarixx4@gmail.com" class="contact-link">
+                denarixx4@gmail.com
+              </a>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="contact.location.label">Location</span>
+              <span data-i18n="contact.location">Germany · global</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formspree AJAX form (no redirect) -->
+        <form
+          id="contact-form"
+          class="contact-form"
+          data-formspree="https://formspree.io/f/manrbpav"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-field">
+              <label data-i18n="contact.name">Name</label>
+              <input type="text" name="name" required />
+            </div>
+
+            <div class="form-field">
+              <label data-i18n="contact.email">Email</label>
+              <input type="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label data-i18n="contact.reason">Reason</label>
+            <select name="topic">
+              <option data-i18n="contact.reason.collab">Collaboration</option>
+              <option data-i18n="contact.reason.product">Product conversation</option>
+              <option data-i18n="contact.reason.consult">Consulting</option>
+              <option data-i18n="contact.reason.other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label data-i18n="contact.msg">Message</label>
+            <textarea name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-full" data-i18n="contact.btn">
+            Send message
+          </button>
+
+          <p id="contact-status" class="contact-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © <span id="year"></span>
+        <span data-i18n="footer.rights">All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- YEAR -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- 🌍 LANGUAGE SYSTEM (auto-detect + dropdown + fade) -->
+  <script>
+    const SUPPORTED_LANGS = ["en", "de", "fr", "es", "it", "pt", "ar", "ru", "zh", "hi"];
+
+    const browserLang = (navigator.language || "en").split("-")[0].toLowerCase();
+    let storedLang = localStorage.getItem("lang");
+
+    const langLabelEl = document.getElementById("lang-current-label");
+    const langTrigger = document.getElementById("lang-trigger");
+    const langMenu = document.getElementById("lang-menu");
+
+    const currentLang =
+      storedLang || (SUPPORTED_LANGS.includes(browserLang) ? browserLang : "en");
+
+    if (langLabelEl) {
+      langLabelEl.textContent = currentLang.toUpperCase();
+    }
+
+    if (langMenu) {
+      Array.from(langMenu.querySelectorAll(".lang-option")).forEach((btn) => {
+        const code = btn.dataset.lang;
+        if (code === currentLang) btn.classList.add("active");
+      });
+    }
+
+    if (langTrigger && langMenu) {
+      langTrigger.addEventListener("click", () => {
+        const isOpen = langMenu.classList.contains("open");
+        langMenu.classList.toggle("open", !isOpen);
+        langTrigger.setAttribute("aria-expanded", String(!isOpen));
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!langMenu.contains(e.target) && !langTrigger.contains(e.target)) {
+          langMenu.classList.remove("open");
+          langTrigger.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    function setLanguage(lang) {
+      if (!SUPPORTED_LANGS.includes(lang)) lang = "en";
+      document.body.classList.add("fade-out");
+      localStorage.setItem("lang", lang);
+      setTimeout(() => {
+        location.reload();
+      }, 450);
+    }
+
+    if (langMenu) {
+      Array.from(langMenu.querySelectorAll(".lang-option")).forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const code = btn.dataset.lang;
+          if (code !== currentLang) setLanguage(code);
+          langMenu.classList.remove("open");
+        });
+      });
+    }
+
+    async function loadLanguage(lang) {
+      try {
+        const res = await fetch(`/lang/${lang}.json`);
+        if (!res.ok) throw new Error();
+        return await res.json();
+      } catch (e) {
+        try {
+          const fallback = await fetch(`/lang/en.json`);
+          return await fallback.json();
+        } catch {
+          return null;
+        }
+      }
+    }
+
+    loadLanguage(currentLang).then((dict) => {
+      if (!dict) return;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const path = el.getAttribute("data-i18n").split(".");
+        let txt = dict;
+        path.forEach((key) => {
+          txt = txt && txt[key];
+        });
+        if (txt !== undefined && txt !== null) {
+          el.innerHTML = txt;
+        }
+      });
+    });
+  </script>
+
+  <!-- NAV TOGGLE + PRELOADER + CONTACT FORM + SCROLL REVEAL -->
+  <script>
+    // PRELOADER – hide after page fully loaded
+    window.addEventListener("load", () => {
+      const pre = document.getElementById("preloader");
+      document.body.classList.add("page-loaded");
+      if (pre) {
+        pre.classList.add("hide");
+        setTimeout(() => pre.remove(), 600);
+      }
+    });
+
+    // MOBILE NAV
+    const navToggle = document.getElementById("nav-toggle");
+    const siteNav = document.getElementById("site-nav");
+    if (navToggle && siteNav) {
+      navToggle.addEventListener("click", () => {
+        document.body.classList.toggle("nav-open");
+      });
+
+      siteNav.querySelectorAll("a[href^='#']").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.body.classList.remove("nav-open");
+        });
+      });
+    }
+
+    // SMOOTH REVEAL ON SCROLL
+    const animatedBlocks = document.querySelectorAll(".hero, .section, .strip");
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.18 }
+    );
+    animatedBlocks.forEach((el) => {
+      el.classList.add("reveal");
+      observer.observe(el);
+    });
+
+    // CONTACT FORM – Formspree AJAX handler (no redirect)
+    (function () {
+      const form = document.getElementById("contact-form");
+      const statusEl = document.getElementById("contact-status");
+
+      if (!form || !statusEl) return;
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const endpoint = form.getAttribute("data-formspree");
+        if (!endpoint) {
+          statusEl.textContent = "Form endpoint missing. Please try again later.";
+          return;
+        }
+
+        const formData = new FormData(form);
+        statusEl.textContent = "Sending…";
+
+        try {
+          const res = await fetch(endpoint, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" }
+          });
+
+          if (res.ok) {
+            statusEl.textContent = "Thank you – your message has been sent.";
+            form.reset();
+          } else {
+            statusEl.textContent =
+              "Something went wrong. You can also email directly at: denarixx4@gmail.com";
+          }
+        } catch (err) {
+          console.error("Contact form error:", err);
+          statusEl.textContent =
+            "Network error. Please try again, or email directly: denarixx4@gmail.com";
+        }
+      });
+    })();
+  </script>
+
+  <!-- 🧠 DENNISCHAT (separate module) -->
+
+  <script src="scripts/chatbot.js" defer></script>
+
+  <!-- DennisChat Widget MUST be inside the BODY -->
+  <div id="chat-launcher" class="chat-launcher">💬 Chat with me</div>
+
+  <div id="chat-window" class="chat-window">
+    <div class="chat-header">
+      <div>
+        <div class="chat-title">DENNISCHAT</div>
+        <div class="chat-subtitle">AI assistant for this site</div>
+      </div>
+      <button id="chat-close" class="chat-close">×</button>
+    </div>
+
+    <div id="chat-messages" class="chat-messages"></div>
+
+    <form id="chat-form" class="chat-input-row">
+      <input id="chat-input" class="chat-input" type="text" placeholder="Ask something…" />
+      <button class="chat-send-btn" type="submit">Send</button>
+    </form>
+  </div>
 </body>
 </html>
