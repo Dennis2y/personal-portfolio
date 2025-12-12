@@ -1,0 +1,16 @@
+
+# macOS
+.DS_Store
+
+# zips / archives
+*.zip
+*.7z
+*.rar
+
+# python caches
+__pycache__/
+*.pyc
+
+# local scripts (optional)
+patch_*.py
+normalize_langs.py

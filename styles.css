@@ -332,23 +332,24 @@ body.page-loaded {
   position: relative;
 }
 
-/* Neon accent text */
+/* Neon purple accent like the dashboard image */
 .hero .accent {
   background: linear-gradient(
     120deg,
-    var(--accent-purple-1),
-    var(--accent-purple-2),
-    var(--accent-purple-3),
-    #3b82f6
+    #f973ff,  /* pinkish purple */
+    #c084fc,  /* soft neon purple */
+    #6366f1   /* bluish purple */
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
-  font-weight: 700;
+
+  /* soft neon glow – not too crazy */
   text-shadow:
-    0 0 16px rgba(168, 85, 247, 0.6),
-    0 0 30px rgba(99, 102, 241, 0.5),
-    0 0 45px rgba(59, 130, 246, 0.35);
+    0 0 6px rgba(192, 132, 252, 0.85),
+    0 0 16px rgba(99, 102, 241, 0.75);
 }
+
 .hero .accent::after {
   content: "";
   position: absolute;
@@ -1388,25 +1389,136 @@ body.page-loaded {
     0 0 14px rgba(36, 228, 255, 0.65);
 }
 
-/* Mobile adjustments for DennisChat */
-@media (max-width: 640px) {
-  .chat-window {
-    right: 0.75rem;
-    bottom: 0.75rem;
-    width: calc(100vw - 1.5rem);
-    height: 380px;
+/* <= 768px — MOBILE LAYOUT */
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 0.6rem 0;
   }
 
-  .chat-launcher {
-    right: 0.85rem;
-    bottom: 0.85rem;
-    padding-inline: 0.95rem;
-    font-size: 0.82rem;
+  .nav-toggle {
+    display: flex;
   }
 
-  .chat-header-main {
+  .nav {
+    position: fixed;
+    top: 3.1rem;
+    right: 0;
+    left: auto;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0.9rem 1.1rem 1.1rem;
+    background: rgba(15, 23, 42, 0.98);
+    border-bottom-left-radius: 1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 300;
+  }
+
+  body.nav-open .nav {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* HERO – smaller portrait in top-right corner */
+  .hero {
+    position: relative;
+    padding: 4.4rem 0 3.2rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-right {
+    position: absolute;
+    top: 4.6rem;
+    right: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .hero-orbit {
+    width: 120px;
+    aspect-ratio: 1;
+    border-radius: 999px;
+    border: none;
+  }
+
+  .hero-orbit-inner {
+    display: none;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .hero-card img {
+    border-radius: 999px;
+    object-fit: cover;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+    margin-top: 6.2rem;   /* push text down below avatar */
+  }
+
+  .hero-subtitle {
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  /* Buttons: full-width stack on mobile */
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 3.1rem 0;
+  }
+
+  .section-services .service-grid,
+  .projects-grid,
+  .future-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Chatbot bubble placement on phones */
+  .chat-launcher {
+    bottom: 18px;
+    right: 18px;
+    transform: scale(0.9);
+  }
+
+  .chat-window {
+    width: 100%;
+    max-width: 420px;
+    right: 8px;
+    left: 8px;
+    bottom: 80px;  /* above Android/iOS bottom bar */
+  }
+
+  /* Stronger overlay for text readability on mobile */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.85)
+    );
   }
 }
 
@@ -1584,3 +1696,71 @@ body.page-loaded {
 .story-photo:hover {
   animation: card-breath 1.4s ease-in-out infinite;
 }
+
+/* === FINAL MOBILE OVERRIDES FOR HERO PORTRAIT === */
+@media (max-width: 768px) {
+  /* keep layout single-column */
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  /* put portrait in the top-right corner as small avatar */
+  .hero-right {
+    position: absolute !important;
+    top: 4.6rem !important;
+    right: 1.2rem !important;
+    left: auto !important;
+    order: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .hero-orbit {
+    width: 120px !important;
+    aspect-ratio: 1 !important;
+    border-radius: 999px !important;
+    border: none !important;
+  }
+
+  .hero-orbit-inner {
+    display: none !important;
+  }
+
+  .hero-card {
+    width: 100% !important;
+  }
+
+  .hero-card img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 999px !important;
+    object-fit: cover !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid rgba(255, 255, 255, 0.35) !important;
+  }
+
+  /* push the headline down so it doesn’t sit under the avatar */
+  .hero h1 {
+    font-size: 2.1rem !important;
+    margin-top: 7.2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+    max-width: none !important;
+  }
+
+  /* stack buttons full-width on mobile */
+  .hero-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+

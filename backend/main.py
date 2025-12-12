@@ -5,8 +5,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
 import httpx
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 
 app = FastAPI()
+
+
+app.mount("/", StaticFiles(directory=str(BASE_DIR), html=True), name="site")
+
+BASE_DIR = Path(__file__).resolve().parent.parent  # project root
 
 # --- CORS: allow ANY origin (localhost + denarixx.com etc.) ---
 app.add_middleware(
