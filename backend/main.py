@@ -1,25 +1,21 @@
 # backend/main.py
 
+from __future__ import annotations
+
+from typing import Optional, Any
+import httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Optional
-import httpx
-from fastapi.staticfiles import StaticFiles
-from pathlib import Path
-
-app = FastAPI()
 
 
-app.mount("/", StaticFiles(directory=str(BASE_DIR), html=True), name="site")
-
-BASE_DIR = Path(__file__).resolve().parent.parent  # project root
+app = FastAPI(title="DennisChat Backend", version="1.0.0")
 
 # --- CORS: allow ANY origin (localhost + denarixx.com etc.) ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],      # allow all origins (localhost + live domain)
-    allow_credentials=False,  # we don't use cookies
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -28,7 +24,6 @@ app.add_middleware(
 MATRIX_COMPLETIONS_URL = "https://firebase-ai-models.matrixzat99.workers.dev/chat/completions"
 MATRIX_MODEL = "gpt-4o-mini"
 
-# Base system prompt
 SYSTEM_PROMPT = (
     "You are DennisChat, the official AI assistant on the personal website "
     "of Dennis Charles (Denarixx).\n\n"
@@ -58,32 +53,51 @@ SYSTEM_PROMPT = (
     "and helpful high-level guidance.\n"
 )
 
-
 class ChatRequest(BaseModel):
     message: str
-    detected_language: Optional[str] = None  # ignored, model detects language itself
+    detected_language: Optional[str] = None  # ignored
 
 
 class ChatResponse(BaseModel):
     reply: str
 
 
+def _extract_reply(data: Any) -> Optional[str]:
+    """Extract assistant text from OpenAI-like or other shapes."""
+    if data is None:
+        return None
+    if isinstance(data, str):
+        return data.strip() or None
+    if isinstance(data, dict):
+        # OpenAI-like
+        try:
+            content = data["choices"][0]["message"]["content"]
+            if isinstance(content, str) and content.strip():
+                return content.strip()
+        except Exception:
+            pass
+
+        # Fallbacks
+        for k in ("reply", "response", "answer", "message", "text", "output"):
+            v = data.get(k)
+            if isinstance(v, str) and v.strip():
+                return v.strip()
+
+    return None
+
+
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(payload: ChatRequest):
-    """
-    Main DennisChat endpoint.
-
-    We let the model detect the language from payload.message itself.
-    We send SYSTEM_PROMPT + user message as OpenAI-style chat.
-    """
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": payload.message},
-    ]
+    user_text = (payload.message or "").strip()
+    if not user_text:
+        raise HTTPException(status_code=400, detail="message is required")
 
     api_body = {
         "model": MATRIX_MODEL,
-        "messages": messages,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_text},
+        ],
         "temperature": 0.6,
         "max_tokens": 400,
     }
@@ -92,45 +106,21 @@ async def chat_endpoint(payload: ChatRequest):
         async with httpx.AsyncClient(timeout=25.0) as client:
             r = await client.post(MATRIX_COMPLETIONS_URL, json=api_body)
     except httpx.RequestError as exc:
-        raise HTTPException(
-            status_code=502,
-            detail="Error contacting AI service",
-        ) from exc
+        raise HTTPException(status_code=502, detail="Error contacting AI service") from exc
 
     if r.status_code != 200:
-        raise HTTPException(
-            status_code=502,
-            detail=f"AI service returned status {r.status_code}",
-        )
+        raise HTTPException(status_code=502, detail=f"AI service returned status {r.status_code}")
 
     try:
         data = r.json()
     except ValueError:
-        # Not JSON – just return raw text
-        return ChatResponse(reply=r.text)
+        # Not JSON
+        return ChatResponse(reply=r.text.strip() or "No reply from AI service.")
 
-    # Expecting OpenAI-like data
-    reply = None
-
-    if isinstance(data, dict):
-        try:
-            reply = data["choices"][0]["message"]["content"]
-        except Exception:
-            # Fallbacks for other shapes
-            reply = (
-                data.get("reply")
-                or data.get("response")
-                or data.get("answer")
-            )
-
-    if not reply:
-        # Last resort
-        reply = str(data)
-
+    reply = _extract_reply(data) or str(data)
     return ChatResponse(reply=reply.strip())
 
 
-# Health check
-@app.get("/")
-def root():
-    return {"status": "ok", "message": "DennisChat backend is running."}
+@app.get("/health")
+def health():
+    return {"ok": True, "message": "DennisChat backend is running."}
