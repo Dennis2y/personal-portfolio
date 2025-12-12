@@ -1,0 +1,156 @@
+{
+  "preloader": {
+    "caption": "Cinematische Systeme werden kalibriert…"
+  },
+  "nav": {
+    "about": "Über mich",
+    "services": "Was ich mache",
+    "work": "Arbeit",
+    "story": "Geschichte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "tag": "KI · Automatisierung · Digitale Systeme",
+    "title": {
+      "part1": "Ich gestalte",
+      "part2": "intelligente Systeme",
+      "part3": "mit einem filmisch-modernen Gefühl."
+    },
+    "subtitle": "Ich bin <strong>Dennis Charles</strong> – KI-Gründer und digitaler Creator. Ich baue Systeme, die Leben und Business ruhiger, klarer und menschlicher machen.",
+    "btn": {
+      "work": "Meine Arbeit ansehen",
+      "contact": "Kontakt aufnehmen"
+    },
+    "meta": {
+      "location": "Deutschland · Globaler Blick",
+      "focus": "KI-Tools · Automatisierung · Digitale Erlebnisse"
+    }
+  },
+  "strip": {
+    "1": "KI-unterstütztes Denken",
+    "2": "Automatisierung & Workflows",
+    "3": "Design digitaler Erlebnisse",
+    "4": "Leises, langfristiges Bauen"
+  },
+  "about": {
+    "title": "Wer ich bin",
+    "lead": "Im Herzen bin ich ein Builder. Ich denke in Systemen, Interfaces und langfristigen Ökosystemen.",
+    "p1": "Meine Arbeit verbindet KI, Automatisierung und digitales Produktdesign. Mir geht es darum, Erlebnisse zu schaffen, die an der Oberfläche filmisch und modern wirken, aber darunter extrem praktisch sind.",
+    "mindsetLabel": "Mindset",
+    "toolsLabel": "Tools",
+    "styleLabel": "Stil",
+    "focusLabel": "Fokus",
+    "mindset": "Langfristig, ruhig, detailverliebt.",
+    "tools": "Python, modernes Web, Automatisierung, Dashboards.",
+    "style": "Neon-Cinematic UI, klare Typografie.",
+    "focus": "Komplexität in Klarheit verwandeln."
+  },
+  "services": {
+    "title": "Was ich tue",
+    "ai": {
+      "title": "KI-bewusste Tools",
+      "desc": "Produkte, die KI leise und respektvoll einsetzen."
+    },
+    "design": {
+      "title": "Digital Experience Design",
+      "desc": "Klar strukturierte Dashboards, elegante Interfaces."
+    },
+    "automation": {
+      "title": "Automatisierung & Workflows",
+      "desc": "Chaos in ruhige, nachvollziehbare Systeme verwandeln."
+    },
+    "advice": {
+      "title": "Beratung",
+      "desc": "1:1-Begleitung, ohne vertrauliche Ideen offenzulegen."
+    }
+  },
+  "invest": {
+    "title": "Eine leise Pipeline globaler Innovationen",
+    "lead1": "Ich entwickle mehrere langfristige Richtungen unter der Marke Denarixx – langsam, privat und mit einer klaren Vorstellung davon, wohin sich das nächste Jahrzehnt bewegt.",
+    "lead2": "Diese Richtungen berühren leise Themen wie Komfort, Wohlbefinden, Bewegung und neue Gerätekategorien – als langfristige interne Arbeit statt öffentliche Produkte.",
+    "lead3": "Sie sind nicht öffentlich. Sie sind nicht in sozialen Medien. Nur echte Partner:innen, Unterstützer:innen und Investor:innen werden in das eigentliche Gespräch eingeladen.",
+    "stealthTitle": "⚪ Stealth-Hardware",
+    "stealthDesc": "Ideen auf physischer Ebene, die Sensorik, Steuerung und stille Intelligenz verbinden.",
+    "ceTitle": "⚪ Consumer Electronics",
+    "ceDesc": "Ruhige, persönliche Geräte mit langlebigem, offline-freundlichem Verhalten.",
+    "mobilityTitle": "⚪ Digitale Mobilität",
+    "mobilityDesc": "Interne Explorationen dazu, wie Menschen sich fühlen, fokussieren und erholen, während sie unterwegs sind.",
+    "healthTitle": "⚪ Human Health",
+    "healthDesc": "Konzepte für langfristiges Wohlbefinden, sanfte Begleitung und klarere Gesundheitsgespräche.",
+    "closing": "Wenn du frühen Zugang, private Einblicke oder strategische Zusammenarbeit suchst, melde dich direkt. Die echten Details werden nur im Gespräch geteilt.",
+    "btn": "Private Unterhaltung anfragen →"
+  },
+  "projects": {
+    "title": "Ausgewählte Richtungen",
+    "subtitle": "Ein Einblick in meine kreative Richtung – die tiefere Arbeit bleibt bewusst privat.",
+    "dash": {
+      "title": "Entscheidungs-Dashboards",
+      "desc": "Rohdaten in klare, visuelle Geschichten verwandeln."
+    },
+    "auto": {
+      "title": "Kreative Automatisierung",
+      "desc": "Systeme, die Zeit sparen, Stress reduzieren und besser erklären, was im Hintergrund passiert."
+    },
+    "exp": {
+      "title": "Digitale Erlebnisse",
+      "desc": "Neon-UI, fließende Abläufe, eine ruhige, moderne Energie."
+    }
+  },
+  "future": {
+    "heading": "Leise, langfristige Erfindungen (investorfreundlich)",
+    "subtitle": "Über Software hinaus baue ich eine kleine Familie hardware-basierter Systeme im Denarixx-Ökosystem. Details sind bewusst privat, aber ernsthafte Partner:innen können ein tieferes Gespräch anfragen.",
+    "stealthTag": "Stealth R&D",
+    "heatingTitle": "Denarixx Heating Systems",
+    "heatingDesc": "Ein leises Neudenken von Komfort und Steuerung im Alltag – hier nur als Stimmung und Richtung gezeigt, nicht als fertiges Produkt.",
+    "phoneTag": "Concept Stage",
+    "phoneTitle": "Denarixx Smartphone",
+    "phoneDesc": "Eine interne Exploration zu zukünftigen persönlichen Geräten im Denarixx-Kosmos. Sichtbar ist nur die Stimmung – keine Spezifikationen, Roadmaps oder Features.",
+    "autoTag": "Future Platform",
+    "autoTitle": "Denarixx Automotive",
+    "autoDesc": "Eine frühe, interne Denarixx-Richtung zu Mobilität und Innenraumerlebnis. Nur die kreative Oberfläche ist sichtbar – echte Konzepte und Technik bleiben vollständig privat.",
+    "healthTag": "Private Deck",
+    "healthTitle": "Denarixx Health",
+    "healthDesc": "Explorationen zu langfristigem Wohlbefinden, subtilem Support und besserer Zusammenarbeit zwischen Menschen und Profis – mit strikt offline gehaltenen Details."
+  },
+  "story": {
+    "title": "Meine Geschichte, kurz",
+    "lead": "Mein Weg war nicht einfach. Aber er hat mich stark gemacht.",
+    "p1": "Ich habe Grenzen überquert, gefährliche Wege überlebt und mein Leben neu aufgebaut. Heute baue ich Systeme, die Ruhe, Klarheit und Richtung bringen.",
+    "p2": "In die Tech-Welt bin ich nicht durch die „einfache“ Tür gekommen. Mein Weg führte durch Länder, reale Gefahr und Momente, in denen Weitermachen nicht garantiert war.",
+    "p3": "Diese Erfahrungen prägen, wie ich über Zeit, Chancen und Verantwortung nachdenke. Deshalb baue ich Systeme, die Chaos reduzieren – nicht vergrößern.",
+    "p4": "Die ganze Geschichte erzähle ich lieber im direkten Gespräch als in einer lauten öffentlichen Timeline. Wenn dich diese Energie anspricht, können wir reden.",
+    "quote": "„Ich habe Überleben in Strategie verwandelt – und gestalte heute Systeme für Klarheit.“"
+  },
+  "contact": {
+    "title": "Lass uns privat sprechen",
+    "lead": "Wenn meine Denkweise mit dir resoniert, melde dich.",
+    "email": {
+      "label": "E-Mail"
+    },
+    "location": {
+      "label": "Standort"
+    },
+    "locationText": "Deutschland · global",
+    "name": "Name",
+    "emailLabel": "E-Mail",
+    "reason": "Grund",
+    "reasonOptions": {
+      "collab": "Zusammenarbeit",
+      "product": "Produktgespräch",
+      "consult": "Beratung",
+      "other": "Sonstiges"
+    },
+    "msg": "Nachricht",
+    "btn": "Nachricht senden"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "chat": {
+    "launcher": "Mit mir chatten",
+    "greeting": "Hallo, ich bin DennisChat 🤖\nIch beantworte Fragen zu Dennis, Denarixx und dieser Website.\nIch antworte in der Sprache, die du verwendest.",
+    "subtitle": "KI-Assistent für diese Seite",
+    "placeholder": "Frag mich etwas …",
+    "send": "Senden"
+  }
+}

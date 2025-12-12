@@ -1,68 +1,123 @@
 {
-  "nav.about": "About",
-  "nav.services": "What I Do",
-  "nav.work": "Work",
-  "nav.story": "Story",
-  "nav.contact": "Contact",
+  "preloader": { "caption": "Calibrating cinematic systems…" },
 
-  "hero.tag": "AI • Automation • Digital Systems",
-  "hero.title.part1": "I design",
-  "hero.title.part2": "intelligent systems",
-  "hero.title.part3": "with a cinematic, modern feel.",
-  "hero.subtitle": "I’m Dennis Charles – an AI-driven founder and digital creator. I explore how automation, design and strategy can work together to make life and business feel calmer, smarter and more human.",
-  "hero.btn.work": "View my work",
-  "hero.btn.contact": "Say hello",
-  "hero.meta.location": "Germany · Global mindset",
-  "hero.meta.focus": "AI tools · Automation · Digital experiences",
+  "nav": {
+    "about": "About",
+    "services": "What I Do",
+    "work": "Work",
+    "story": "Story",
+    "contact": "Contact"
+  },
 
-  "strip.1": "AI-assisted thinking",
-  "strip.2": "Automation & workflows",
-  "strip.3": "Digital experience design",
-  "strip.4": "Quiet long-term building",
+  "hero": {
+    "tag": "AI • Automation • Digital Systems",
+    "title": { "part1": "I design", "part2": "intelligent systems", "part3": "with a cinematic, modern feel." },
+    "subtitle": "I’m <strong>Dennis Charles</strong> — an AI-driven founder and digital creator. I build systems that make life and business feel calmer, smarter, and more human.",
+    "btn": { "work": "View my work", "contact": "Say hello" },
+    "meta": { "location": "Germany · Global mindset", "focus": "AI tools · Automation · Digital experiences" }
+  },
 
-  "about.title": "Who I am",
-  "about.lead": "I’m a builder at heart. I think in systems, interfaces and long-term ecosystems.",
-  "about.p1": "My work blends AI, automation and digital product design. I care about creating experiences that feel cinematic and modern on the surface, but extremely practical underneath.",
-  "about.mindset": "Long-term, calm, detail-obsessed.",
-  "about.tools": "Python, modern web, automation, dashboards.",
-  "about.style": "Neon cinematic UI, clean typography.",
-  "about.focus": "Turning complexity into simplicity.",
+  "strip": { "1": "AI-assisted thinking", "2": "Automation & workflows", "3": "Digital experience design", "4": "Quiet long-term building" },
 
-  "services.title": "What I do",
-  "services.ai": "AI-aware tools",
-  "services.ai.desc": "Products that use AI quietly and respectfully.",
-  "services.design": "Digital experience design",
-  "services.design.desc": "Clean dashboards, elegant interfaces.",
-  "services.automation": "Automation & workflows",
-  "services.automation.desc": "Turning chaos into calm systems.",
-  "services.advice": "Advisory",
-  "services.advice.desc": "1:1 guidance without exposing private ideas.",
+  "about": {
+    "title": "Who I am",
+    "lead": "I’m a builder at heart. I think in systems, interfaces and long-term ecosystems.",
+    "p1": "My work blends AI, automation and digital product design. I care about creating experiences that feel cinematic and modern on the surface, but extremely practical underneath.",
+    "mindsetLabel": "Mindset",
+    "toolsLabel": "Tools",
+    "styleLabel": "Style",
+    "focusLabel": "Focus",
+    "mindset": "Long-term, calm, detail-obsessed.",
+    "tools": "Python, modern web, automation, dashboards.",
+    "style": "Neon cinematic UI, clean typography.",
+    "focus": "Turning complexity into clarity."
+  },
 
-  "projects.title": "Selected directions",
-  "projects.subtitle": "A snapshot of my creative direction — the deeper work stays private.",
-  "projects.dash": "Decision-support dashboards",
-  "projects.dash.desc": "Turning raw data into clear stories.",
-  "projects.auto": "Creative automation",
-  "projects.auto.desc": "Systems that save time and reduce stress.",
-  "projects.exp": "Digital experiences",
-  "projects.exp.desc": "Neon UI, smooth flows, modern energy.",
+  "services": {
+    "title": "What I do",
+    "ai": { "title": "AI-aware tools", "desc": "Products that use AI quietly and respectfully." },
+    "design": { "title": "Digital experience design", "desc": "Clean dashboards, elegant interfaces." },
+    "automation": { "title": "Automation & workflows", "desc": "Turning chaos into calm systems." },
+    "advice": { "title": "Advisory", "desc": "1:1 guidance without exposing private ideas." }
+  },
 
-  "story.title": "My story, briefly",
-  "story.lead": "My path wasn't easy. But it made me strong.",
-  "story.p1": "I’ve crossed borders, survived dangerous paths and rebuilt my life. Today I build systems that bring calm, clarity and direction.",
-  "story.quote": "“I turned survival into strategy — and now I design systems for clarity.”",
+  "invest": {
+    "title": "A Quiet Pipeline of World-Scale Innovations",
+    "lead1": "I’m developing several long-horizon systems under the Denarixx brand — built slowly, privately, and with a clear vision of where the next decade is heading.",
+    "lead2": "These directions quietly touch physical comfort, wellbeing, movement and new kinds of devices — explored as long-horizon internal work inside Denarixx rather than public products.",
+    "lead3": "They are not public. They are not on social media. Only genuine partners, supporters and investors are invited into the real conversation.",
+    "stealthTitle": "⚪ Stealth Hardware",
+    "stealthDesc": "Physical-layer ideas that combine sensing, control and quiet intelligence.",
+    "ceTitle": "⚪ Consumer Electronics",
+    "ceDesc": "Calm, personal devices with long-lived, offline-friendly behavior.",
+    "mobilityTitle": "⚪ Digital Mobility",
+    "mobilityDesc": "Internal explorations around how people feel, focus and recover while moving through the world.",
+    "healthTitle": "⚪ Human Health",
+    "healthDesc": "Concepts around long-term wellbeing, gentle guidance and clearer health conversations.",
+    "closing": "If you want early access, private previews or strategic collaboration, reach out directly. The real details are only shared in conversation.",
+    "btn": "Request Private Conversation →"
+  },
 
-  "gallery.title": "Visual Moodboard",
-  "gallery.subtitle": "A curated set of modern neon-tech visuals matching my creative direction.",
+  "projects": {
+    "title": "Selected directions",
+    "subtitle": "A snapshot of my creative direction — the deeper work stays private.",
+    "dash": { "title": "Decision-support dashboards", "desc": "Turning raw data into clear stories." },
+    "auto": { "title": "Creative automation", "desc": "Systems that save time and reduce stress." },
+    "exp": { "title": "Digital experiences", "desc": "Neon UI, smooth flows, modern energy." }
+  },
 
-  "contact.title": "Let’s talk privately",
-  "contact.lead": "If my mindset resonates, reach out.",
-  "contact.name": "Name",
-  "contact.email": "Email",
-  "contact.reason": "Reason",
-  "contact.msg": "Message",
-  "contact.btn": "Send message",
-  "contact.location": "Germany · global",
+  "future": {
+    "heading": "Quiet long-term inventions (investor-friendly)",
+    "subtitle": "Beyond software, I’m building a small family of hardware-rooted systems under the Denarixx ecosystem. Details are intentionally private, but serious partners can request a deeper conversation.",
+    "stealthTag": "Stealth R&D",
+    "heatingTitle": "Denarixx Heating Systems",
+    "heatingDesc": "A quiet rethink of everyday comfort and control in daily environments — shown only as mood and direction, not as a finished product.",
+    "phoneTag": "Concept Stage",
+    "phoneTitle": "Denarixx Smartphone",
+    "phoneDesc": "An internal exploration around future personal devices in the Denarixx ecosystem. Only the overall mood and direction are visible here — no specifications, roadmaps or feature details are shared publicly.",
+    "autoTag": "Future Platform",
+    "autoTitle": "Denarixx Automotive",
+    "autoDesc": "An early, internal Denarixx exploration around future mobility and in-car experience. Only a high-level creative direction is shown here — real concepts and technical details stay completely private.",
+    "healthTag": "Private Deck",
+    "healthTitle": "Denarixx Health",
+    "healthDesc": "Explorations around long-term wellbeing, subtle support and better collaboration between people and professionals — with specifics kept strictly offline and private."
+  },
 
-  "footer.rights": "All rights reserved."
+  "story": {
+    "title": "My story, briefly",
+    "lead": "My path wasn't easy. But it made me strong.",
+    "p1": "I’ve crossed borders, survived dangerous paths and rebuilt my life. Today I build systems that bring calm, clarity and direction.",
+    "p2": "I didn't come into tech through the “easy” door. My journey moved through countries, real danger, and moments where continuing wasn’t guaranteed.",
+    "p3": "Those experiences shaped how I think about time, opportunity, and responsibility. They’re why I build systems that reduce chaos — not create it.",
+    "p4": "The full story is something I prefer to share in conversation — not in a loud public timeline. If this energy resonates, we can talk.",
+    "quote": "“I turned survival into strategy — and now I design systems for clarity.”"
+  },
+
+  "contact": {
+    "title": "Let’s talk privately",
+    "lead": "If my mindset resonates, reach out.",
+    "email": { "label": "Email" },
+    "location": { "label": "Location" },
+    "locationText": "Germany · global",
+    "name": "Name",
+    "reason": "Reason",
+    "reasonOptions": {
+      "collab": "Collaboration",
+      "product": "Product conversation",
+      "consult": "Consulting",
+      "other": "Other"
+    },
+    "msg": "Message",
+    "btn": "Send message"
+  },
+
+  "footer": { "rights": "All rights reserved." },
+
+  "chat": {
+    "launcher": "Chat with me",
+    "subtitle": "AI assistant for this site",
+    "placeholder": "Ask something…",
+    "send": "Send",
+    "welcome": "Hi, I’m DennisChat 🤖\nI can answer questions about Dennis, Denarixx, and this website.\nI’ll reply in the language you use."
+  }
 }

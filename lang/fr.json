@@ -1,0 +1,100 @@
+{
+  "preloader": { "caption": "Calibration des systèmes cinématiques…" },
+  "nav": { "about": "À propos", "services": "Ce que je fais", "work": "Travaux", "story": "Histoire", "contact": "Contact" },
+  "hero": {
+    "tag": "IA • Automatisation • Systèmes numériques",
+    "title": { "part1": "Je crée", "part2": "des systèmes intelligents", "part3": "au style cinématique et moderne." },
+    "subtitle": "Je suis <strong>Dennis Charles</strong> — fondateur orienté IA et créateur digital. Je construis des systèmes qui rendent la vie et le business plus calmes, plus clairs et plus humains.",
+    "btn": { "work": "Voir mon travail", "contact": "Me contacter" },
+    "meta": { "location": "Allemagne · Vision globale", "focus": "Outils IA · Automatisation · Expériences digitales" }
+  },
+  "strip": { "1": "Pensée assistée par IA", "2": "Automatisation & workflows", "3": "Design d’expériences digitales", "4": "Construction calme et durable" },
+  "about": {
+    "title": "Qui je suis",
+    "lead": "Je suis avant tout un bâtisseur. Je pense en systèmes, interfaces et écosystèmes durables.",
+    "p1": "Mon travail associe IA, automatisation et design produit digital. Je veux créer des expériences cinématiques et modernes en surface, mais extrêmement pratiques en profondeur.",
+    "mindsetLabel": "État d’esprit",
+    "toolsLabel": "Outils",
+    "styleLabel": "Style",
+    "focusLabel": "Focus",
+    "mindset": "Long terme, calme, obsession du détail.",
+    "tools": "Python, web moderne, automatisation, dashboards.",
+    "style": "UI néon cinématique, typographie propre.",
+    "focus": "Transformer la complexité en clarté."
+  },
+  "services": {
+    "title": "Ce que je fais",
+    "ai": { "title": "Outils conscients de l’IA", "desc": "Des produits qui utilisent l’IA avec discrétion et respect." },
+    "design": { "title": "Design d’expériences digitales", "desc": "Dashboards épurés, interfaces élégantes." },
+    "automation": { "title": "Automatisation & workflows", "desc": "Transformer le chaos en systèmes calmes." },
+    "advice": { "title": "Conseil", "desc": "Accompagnement 1:1 sans exposer les idées privées." }
+  },
+  "invest": {
+    "title": "Un pipeline discret d’innovations à grande échelle",
+    "lead1": "Je développe plusieurs axes long-terme sous Denarixx — lentement, en privé, avec une vision claire de la prochaine décennie.",
+    "lead2": "Ces directions touchent confort physique, bien-être, mobilité et nouveaux types d’appareils — en R&D interne plutôt qu’en produits publics.",
+    "lead3": "Ce n’est pas public. Ce n’est pas sur les réseaux. Seuls des partenaires, soutiens et investisseurs sérieux sont invités dans la vraie conversation.",
+    "stealthTitle": "⚪ Matériel furtif",
+    "stealthDesc": "Idées physiques combinant capteurs, contrôle et intelligence discrète.",
+    "ceTitle": "⚪ Électronique grand public",
+    "ceDesc": "Appareils personnels calmes, durables et orientés offline-first.",
+    "mobilityTitle": "⚪ Mobilité digitale",
+    "mobilityDesc": "Explorations internes sur la concentration, le ressenti et la récupération en mouvement.",
+    "healthTitle": "⚪ Santé humaine",
+    "healthDesc": "Concepts de bien-être long-terme, guidance douce et conversations santé plus claires.",
+    "closing": "Pour un accès anticipé, des aperçus privés ou une collaboration stratégique, contactez-moi. Les vrais détails se partagent uniquement en conversation.",
+    "btn": "Demander une conversation privée →"
+  },
+  "projects": {
+    "title": "Directions sélectionnées",
+    "subtitle": "Un aperçu de ma direction créative — le travail profond reste privé.",
+    "dash": { "title": "Dashboards d’aide à la décision", "desc": "Transformer des données brutes en histoires claires." },
+    "auto": { "title": "Automatisation créative", "desc": "Des systèmes qui font gagner du temps et réduisent le stress." },
+    "exp": { "title": "Expériences digitales", "desc": "UI néon, flux fluides, énergie moderne." }
+  },
+  "future": {
+    "heading": "Inventions calmes à long terme (investor-friendly)",
+    "subtitle": "Au-delà du logiciel, je construis une petite famille de systèmes orientés hardware dans l’écosystème Denarixx. Les détails restent privés, mais les partenaires sérieux peuvent demander une discussion plus profonde.",
+    "stealthTag": "R&D furtive",
+    "heatingTitle": "Denarixx Heating Systems",
+    "heatingDesc": "Une relecture discrète du confort et du contrôle au quotidien — montré comme une direction, pas comme un produit fini.",
+    "phoneTag": "Phase concept",
+    "phoneTitle": "Denarixx Smartphone",
+    "phoneDesc": "Exploration interne d’appareils personnels futurs. Ici, seule l’ambiance est visible — pas de specs, ni roadmap, ni détails publics.",
+    "autoTag": "Plateforme future",
+    "autoTitle": "Denarixx Automotive",
+    "autoDesc": "Exploration interne de mobilité et d’expérience cabine. Seule la direction créative est visible — le reste reste privé.",
+    "healthTag": "Deck privé",
+    "healthTitle": "Denarixx Health",
+    "healthDesc": "Explorations sur le bien-être long-terme et une meilleure collaboration — avec des détails strictement privés."
+  },
+  "story": {
+    "title": "Mon histoire, en bref",
+    "lead": "Mon chemin n’a pas été simple. Mais il m’a rendu fort.",
+    "p1": "J’ai traversé des frontières, survécu à des passages dangereux et reconstruit ma vie. Aujourd’hui je crée des systèmes qui apportent calme, clarté et direction.",
+    "p2": "Je ne suis pas entré dans la tech par la « voie facile ». Mon parcours a traversé des pays, une vraie dangerosité et des moments où continuer n’était pas garanti.",
+    "p3": "Ces expériences ont façonné ma vision du temps, des opportunités et de la responsabilité. C’est pourquoi je construis des systèmes qui réduisent le chaos — pas l’inverse.",
+    "p4": "Je préfère partager l’histoire complète en conversation — pas sur une timeline publique bruyante. Si cette énergie résonne, parlons-en.",
+    "quote": "« J’ai transformé la survie en stratégie — et maintenant je conçois des systèmes pour la clarté. »"
+  },
+  "contact": {
+    "title": "Parlons en privé",
+    "lead": "Si ma vision résonne avec vous, contactez-moi.",
+    "email": { "label": "E-mail" },
+    "location": { "label": "Lieu" },
+    "locationText": "Allemagne · global",
+    "name": "Nom",
+    "reason": "Motif",
+    "reasonOptions": { "collab": "Collaboration", "product": "Discussion produit", "consult": "Consulting", "other": "Autre" },
+    "msg": "Message",
+    "btn": "Envoyer le message"
+  },
+  "footer": { "rights": "Tous droits réservés." },
+  "chat": {
+    "launcher": "Discuter avec moi",
+    "subtitle": "Assistant IA pour ce site",
+    "placeholder": "Pose une question…",
+    "send": "Envoyer",
+    "welcome": "Salut, je suis DennisChat 🤖\nJe réponds aux questions sur Dennis, Denarixx et ce site.\nJe réponds dans la langue que tu utilises."
+  }
+}

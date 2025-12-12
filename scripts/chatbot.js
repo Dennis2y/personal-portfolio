@@ -1,8 +1,6 @@
-// scripts/chatbot.js – DennisChat → FastAPI backend on Render (multilingual)
+// scripts/chatbot.js – DennisChat → FastAPI backend on Render (multilingual + live typing)
 
-// IIFE wrapper
 (function () {
-  // ✅ Your FastAPI backend on Render
   const API_URL = "https://dennischat-backend.onrender.com/chat";
   console.log("🔥 DennisChat JS loaded – API_URL =", API_URL);
 
@@ -20,38 +18,14 @@
 
   let isSending = false;
 
-  // ---------- LANGUAGE DETECTOR (hint only) ----------
-  function detectLanguage(text) {
-    const t = (text || "").toLowerCase().trim();
-
-    // 1) Strong signals by alphabet
-    if (/[ء-ي]/.test(text)) return "AR"; // Arabic
-    if (/[а-яё]/i.test(text)) return "RU"; // Cyrillic (Russian, etc.)
-    if (/[\u4e00-\u9fff]/.test(text)) return "ZH"; // Chinese characters
-    if (/[अ-ह]/.test(text)) return "HI"; // Devanagari (Hindi, etc.)
-
-    // 2) Explicit ENGLISH greetings & phrases
-    if (
-      /^(hi|hello|hey)\b/.test(t) ||
-      /good\s+morning/.test(t) ||
-      /good\s+afternoon/.test(t) ||
-      /good\s+evening/.test(t) ||
-      /how are you/.test(t) ||
-      /what'?s up/.test(t)
-    ) {
-      return "EN";
-    }
-
-    // 3) Explicit language keywords
-    if (/hallo|tschüss|danke|ß|ä|ö|ü/.test(t)) return "DE"; // German
-    if (/bonjour|merci|fran\u00e7ais|ç|é|è|à/.test(t)) return "FR"; // French
-    if (/hola|gracias|espa\u00f1ol|¿|¡|ñ/.test(t)) return "ES"; // Spanish
-    if (/ciao|grazie|italiano/.test(t)) return "IT";            // Italian
-    if (/olá|ola|obrigado|português/.test(t)) return "PT";      // Portuguese
-
-    // 4) Fallback: EN as safe default
-    return "EN";
-  }
+  // Keep a reference so we can update the welcome message if language changes
+  let welcomeBubbleEl = null;
+  let currentLang = "en";
+  let strings = {
+    welcome: "Hi, I’m DennisChat 🤖 I can answer questions about Dennis, Denarixx, this site, and some high-level AI/creative topics. Ask me anything.",
+    thinking: "Thinking…",
+    error: "⚠️ I couldn’t reach the AI service right now. Please try again in a moment."
+  };
 
   // ---------- UI HELPERS ----------
   function scrollToBottom() {
@@ -72,21 +46,112 @@
     return bubble;
   }
 
-  async function typeText(bubble, text, speed = 14) {
-    bubble.textContent = "";
-    for (let i = 0; i < text.length; i++) {
-      bubble.textContent += text[i];
-      scrollToBottom();
-      await new Promise((res) => setTimeout(res, speed));
-    }
-  }
-
   function setSendingState(value) {
     isSending = value;
     input.disabled = value;
     const submitBtn = form.querySelector("button[type='submit']");
     if (submitBtn) submitBtn.disabled = value;
   }
+
+  // 🟣 Fast typewriter effect
+  async function typeText(bubble, text, speed = 14) {
+    if (!text || text.length > 1200) {
+      bubble.textContent = text || "";
+      scrollToBottom();
+      return;
+    }
+
+    bubble.textContent = "";
+    for (let i = 0; i < text.length; i++) {
+      bubble.textContent += text[i];
+      scrollToBottom();
+      // eslint-disable-next-line no-await-in-loop
+      await new Promise((res) => setTimeout(res, speed));
+    }
+  }
+
+  // ---------- I18N HELPERS ----------
+  function baseLang(code) {
+    return String(code || "").toLowerCase().split("-")[0];
+  }
+
+  function getCurrentLang() {
+    // priority: window global set by index i18n → localStorage.lang → <html lang>
+    const fromGlobal = baseLang(window.__DENNIS_LANG__);
+    if (fromGlobal) return fromGlobal;
+
+    let stored = "";
+    try { stored = localStorage.getItem("lang") || ""; } catch (_) {}
+    stored = baseLang(stored);
+    if (stored) return stored;
+
+    return baseLang(document.documentElement.lang) || "en";
+  }
+
+  async function fetchJson(url) {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return await res.json();
+  }
+
+  async function loadLangDict(lang) {
+    const safe = baseLang(lang) || "en";
+    const urls = [
+      `lang/${safe}.json`,
+      `/lang/${safe}.json`,
+      new URL(`lang/${safe}.json`, window.location.href).toString()
+    ];
+
+    for (const u of urls) {
+      try {
+        return await fetchJson(u);
+      } catch (_) {}
+    }
+    return null;
+  }
+
+  function t(dict, key, fallback = null) {
+    if (!dict || typeof dict !== "object") return fallback;
+    const parts = key.split(".");
+    let v = dict;
+    for (const p of parts) {
+      if (v && typeof v === "object" && p in v) v = v[p];
+      else return fallback;
+    }
+    return typeof v === "string" ? v : fallback;
+  }
+
+  async function refreshChatLanguage() {
+    const lang = getCurrentLang();
+    currentLang = lang;
+
+    // (Optional) RTL support for Arabic
+    if (lang === "ar") document.documentElement.setAttribute("dir", "rtl");
+    else document.documentElement.removeAttribute("dir");
+
+    const dict = (await loadLangDict(lang)) || (await loadLangDict("en"));
+
+    // Prefer chat.welcome, fallback to chat.greeting (your older key), then English default
+    strings.welcome =
+      t(dict, "chat.welcome", null) ||
+      t(dict, "chat.greeting", null) ||
+      strings.welcome;
+
+    // Optional keys (if you add them later)
+    strings.thinking = t(dict, "chat.thinking", strings.thinking);
+    strings.error    = t(dict, "chat.error", strings.error);
+
+    // If the welcome bubble exists, update it immediately when language changes
+    if (welcomeBubbleEl) {
+      welcomeBubbleEl.textContent = strings.welcome;
+      scrollToBottom();
+    }
+  }
+
+  // Listen to your index.html event (we dispatch it there)
+  window.addEventListener("dennis:langChanged", () => {
+    refreshChatLanguage();
+  });
 
   // ---------- OPEN / CLOSE WINDOW ----------
   launcher.addEventListener("click", () => {
@@ -108,11 +173,11 @@
     }
   });
 
-  // ---------- INITIAL WELCOME MESSAGE ----------
-  (function initialWelcome() {
-    const bubble = createMsgBubble("bot");
-    bubble.textContent =
-      "Hi, I’m DennisChat 🤖 I can answer questions about Dennis, Denarixx, this site, and some high-level AI/creative topics. Ask me anything.";
+  // ---------- INITIAL WELCOME MESSAGE (translated) ----------
+  (async function initialWelcome() {
+    await refreshChatLanguage();
+    welcomeBubbleEl = createMsgBubble("bot");
+    welcomeBubbleEl.textContent = strings.welcome;
   })();
 
   // ---------- MAIN MESSAGE HANDLER ----------
@@ -128,13 +193,7 @@
     userBubble.textContent = rawText;
 
     const botBubble = createMsgBubble("bot");
-    botBubble.textContent = "Thinking…";
-
-    const langCode = detectLanguage(rawText);
-    console.log("[DennisChat] Outgoing message:", {
-      text: rawText,
-      detected_language: langCode,
-    });
+    botBubble.textContent = strings.thinking;
 
     setSendingState(true);
 
@@ -142,25 +201,19 @@
       const res = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message: rawText,
-          detected_language: langCode,
-        }),
+        body: JSON.stringify({ message: rawText })
       });
 
       if (!res.ok) {
         let detail = `Error ${res.status}`;
         try {
           const data = await res.json();
-          if (data && (data.detail || data.error)) {
-            detail = data.detail || data.error;
-          }
+          if (data && (data.detail || data.error)) detail = data.detail || data.error;
         } catch (_) {}
         throw new Error(detail);
       }
 
       const data = await res.json();
-
       const reply =
         (typeof data === "string" && data) ||
         data.reply ||
@@ -168,11 +221,10 @@
         data.response ||
         "[No reply from backend]";
 
-      await typeText(botBubble, reply, 15);
+      await typeText(botBubble, reply, 14);
     } catch (err) {
       console.error("DennisChat backend error:", err);
-      botBubble.textContent =
-        "⚠️ I couldn’t reach the AI service right now. Please try again in a moment.";
+      botBubble.textContent = strings.error;
     } finally {
       setSendingState(false);
       scrollToBottom();
