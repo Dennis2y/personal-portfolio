@@ -14,3 +14,7 @@ __pycache__/
 # local scripts (optional)
 patch_*.py
 normalize_langs.py
+
+.venv/
+__pycache__/
+*.pyc

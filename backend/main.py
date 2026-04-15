@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Optional, Any
 import os
+import json
 
 import httpx
 from fastapi import FastAPI, HTTPException
@@ -64,7 +65,6 @@ class ChatResponse(BaseModel):
 
 
 def _extract_reply(data: Any) -> Optional[str]:
-    """Extract assistant text from Gemini or OpenAI-like response shapes."""
     if data is None:
         return None
 
@@ -75,11 +75,12 @@ def _extract_reply(data: Any) -> Optional[str]:
         candidates = data.get("candidates")
         if isinstance(candidates, list) and candidates:
             first = candidates[0] or {}
+
             content = first.get("content")
             if isinstance(content, dict):
                 parts = content.get("parts")
                 if isinstance(parts, list):
-                    texts: list[str] = []
+                    texts = []
                     for part in parts:
                         if isinstance(part, dict):
                             txt = part.get("text")
@@ -88,7 +89,11 @@ def _extract_reply(data: Any) -> Optional[str]:
                     if texts:
                         return "\n".join(texts)
 
-        for key in ("reply", "response", "answer", "text"):
+            output_text = first.get("output_text")
+            if isinstance(output_text, str) and output_text.strip():
+                return output_text.strip()
+
+        for key in ("reply", "response", "answer", "text", "output"):
             value = data.get(key)
             if isinstance(value, str) and value.strip():
                 return value.strip()
@@ -102,6 +107,16 @@ def _extract_reply(data: Any) -> Optional[str]:
                 content = message.get("content")
                 if isinstance(content, str) and content.strip():
                     return content.strip()
+
+                if isinstance(content, list):
+                    texts = []
+                    for item in content:
+                        if isinstance(item, dict):
+                            txt = item.get("text")
+                            if isinstance(txt, str) and txt.strip():
+                                texts.append(txt.strip())
+                    if texts:
+                        return "\n".join(texts)
 
             delta = first.get("delta")
             if isinstance(delta, dict):
@@ -122,16 +137,24 @@ async def chat_endpoint(payload: ChatRequest):
     if not api_key:
         raise HTTPException(status_code=500, detail="GEMINI_API_KEY is not set")
 
-    prompt = f"System: {SYSTEM_PROMPT}\n\nUser: {user_text}"
-
     api_body = {
+        "system_instruction": {
+            "parts": [
+                {"text": SYSTEM_PROMPT}
+            ]
+        },
         "contents": [
             {
+                "role": "user",
                 "parts": [
-                    {"text": prompt}
+                    {"text": user_text}
                 ]
             }
-        ]
+        ],
+        "generationConfig": {
+            "temperature": 0.6,
+            "maxOutputTokens": 300
+        }
     }
 
     try:
@@ -147,18 +170,26 @@ async def chat_endpoint(payload: ChatRequest):
     except httpx.RequestError as exc:
         raise HTTPException(status_code=502, detail="Error contacting Gemini service") from exc
 
+    raw_text = r.text
+
     if r.status_code != 200:
-        detail = r.text.strip() or f"Gemini service returned status {r.status_code}"
-        raise HTTPException(status_code=502, detail=detail)
+      raise HTTPException(
+          status_code=502,
+          detail=f"Gemini status {r.status_code}: {raw_text[:1200]}"
+      )
 
     try:
         data = r.json()
     except ValueError:
-        raise HTTPException(status_code=502, detail="Gemini returned non-JSON response")
+        raise HTTPException(status_code=502, detail=f"Gemini returned non-JSON: {raw_text[:1200]}")
 
     reply = _extract_reply(data)
     if not reply:
-        reply = "Sorry, I could not generate a proper reply right now. Please try again."
+        print("DEBUG GEMINI RAW RESPONSE:", json.dumps(data, ensure_ascii=False)[:4000], flush=True)
+        raise HTTPException(
+            status_code=502,
+            detail=f"Gemini returned JSON but no extractable text: {json.dumps(data, ensure_ascii=False)[:1200]}"
+        )
 
     return ChatResponse(reply=reply.strip())
 
