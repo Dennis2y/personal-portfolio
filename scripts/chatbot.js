@@ -22,7 +22,7 @@
   let welcomeBubbleEl = null;
   let currentLang = "en";
   let strings = {
-    welcome: "Hi, I’m DennisChat 🤖 I can answer questions about Dennis, Denarixx, this site, and some high-level AI/creative topics. Ask me anything.",
+    welcome: "Hi, I’m DennisChat 🤖 Ask me about Dennis, Denarixx, or this website. I’ll reply in your language.",
     thinking: "Thinking…",
     error: "⚠️ I couldn’t reach the AI service right now. Please try again in a moment."
   };

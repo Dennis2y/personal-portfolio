@@ -63,25 +63,51 @@ class ChatResponse(BaseModel):
 
 
 def _extract_reply(data: Any) -> Optional[str]:
-    """Extract assistant text from OpenAI-like or other shapes."""
+    """Extract assistant text from common provider response shapes."""
     if data is None:
         return None
+
     if isinstance(data, str):
         return data.strip() or None
-    if isinstance(data, dict):
-        # OpenAI-like
-        try:
-            content = data["choices"][0]["message"]["content"]
-            if isinstance(content, str) and content.strip():
-                return content.strip()
-        except Exception:
-            pass
 
-        # Fallbacks
-        for k in ("reply", "response", "answer", "message", "text", "output"):
-            v = data.get(k)
-            if isinstance(v, str) and v.strip():
-                return v.strip()
+    if isinstance(data, dict):
+        if isinstance(data.get("reply"), str) and data["reply"].strip():
+            return data["reply"].strip()
+
+        if isinstance(data.get("response"), str) and data["response"].strip():
+            return data["response"].strip()
+
+        if isinstance(data.get("answer"), str) and data["answer"].strip():
+            return data["answer"].strip()
+
+        if isinstance(data.get("text"), str) and data["text"].strip():
+            return data["text"].strip()
+
+        choices = data.get("choices")
+        if isinstance(choices, list) and choices:
+            first = choices[0] or {}
+
+            message = first.get("message")
+            if isinstance(message, dict):
+                content = message.get("content")
+                if isinstance(content, str) and content.strip():
+                    return content.strip()
+
+                if isinstance(content, list):
+                    parts = []
+                    for item in content:
+                        if isinstance(item, dict):
+                            txt = item.get("text")
+                            if isinstance(txt, str) and txt.strip():
+                                parts.append(txt.strip())
+                    if parts:
+                        return "\n".join(parts)
+
+            delta = first.get("delta")
+            if isinstance(delta, dict):
+                content = delta.get("content")
+                if isinstance(content, str) and content.strip():
+                    return content.strip()
 
     return None
 
@@ -117,7 +143,11 @@ async def chat_endpoint(payload: ChatRequest):
         # Not JSON
         return ChatResponse(reply=r.text.strip() or "No reply from AI service.")
 
-    reply = _extract_reply(data) or str(data)
+    reply = _extract_reply(data)
+
+    if not reply:
+        reply = "Sorry, I could not generate a proper reply right now. Please try again."
+
     return ChatResponse(reply=reply.strip())
 
 

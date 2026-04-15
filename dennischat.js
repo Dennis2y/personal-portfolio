@@ -134,7 +134,7 @@ function getDennisChatReply(rawInput) {
   // --- DEFAULT FALLBACK ---
 
   return (
-    "I’m DennisChat 🤖. I can answer questions about Dennis, Denarixx, this site, and some high-level AI/creative topics.\n" +
+    "I’m DennisChat 🤖. Ask me about Dennis, Denarixx, or this website.\n" +
     "Try asking things like:\n" +
     "- \"Who is Dennis Charles?\"\n" +
     "- \"Tell me about the Denarixx car project\"\n" +
