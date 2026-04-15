@@ -77,7 +77,7 @@
     "mobilityDesc": "Interne Explorationen dazu, wie Menschen sich fühlen, fokussieren und erholen, während sie unterwegs sind.",
     "healthTitle": "⚪ Human Health",
     "healthDesc": "Konzepte für langfristiges Wohlbefinden, sanfte Begleitung und klarere Gesundheitsgespräche.",
-    "closing": "Wenn du frühen Zugang, private Einblicke oder strategische Zusammenarbeit suchst, melde dich direkt. Die echten Details werden nur im Gespräch geteilt.",
+    "closing": "Wenn Sie frühen Zugang, private Einblicke oder strategische Zusammenarbeit suchen, melden Sie sich direkt. Die echten Details werden nur im Gespräch geteilt.",
     "btn": "Private Unterhaltung anfragen →"
   },
   "projects": {
@@ -118,12 +118,12 @@
     "p1": "Ich habe Grenzen überquert, gefährliche Wege überlebt und mein Leben neu aufgebaut. Heute baue ich Systeme, die Ruhe, Klarheit und Richtung bringen.",
     "p2": "In die Tech-Welt bin ich nicht durch die „einfache“ Tür gekommen. Mein Weg führte durch Länder, reale Gefahr und Momente, in denen Weitermachen nicht garantiert war.",
     "p3": "Diese Erfahrungen prägen, wie ich über Zeit, Chancen und Verantwortung nachdenke. Deshalb baue ich Systeme, die Chaos reduzieren – nicht vergrößern.",
-    "p4": "Die ganze Geschichte erzähle ich lieber im direkten Gespräch als in einer lauten öffentlichen Timeline. Wenn dich diese Energie anspricht, können wir reden.",
+    "p4": "Die ganze Geschichte erzähle ich lieber im direkten Gespräch als in einer lauten öffentlichen Timeline. Wenn Sie diese Energie anspricht, können wir gerne sprechen.",
     "quote": "„Ich habe Überleben in Strategie verwandelt – und gestalte heute Systeme für Klarheit.“"
   },
   "contact": {
     "title": "Lass uns privat sprechen",
-    "lead": "Wenn meine Denkweise mit dir resoniert, melde dich.",
+    "lead": "Wenn meine Denkweise mit Ihnen resoniert, melden Sie sich.",
     "email": {
       "label": "E-Mail"
     },
@@ -148,9 +148,9 @@
   },
   "chat": {
     "launcher": "Mit mir chatten",
-    "greeting": "Hallo, ich bin DennisChat 🤖\nIch beantworte Fragen zu Dennis, Denarixx und dieser Website.\nIch antworte in der Sprache, die du verwendest.",
+    "greeting": "Hallo, ich bin DennisChat 🤖\nFragen Sie mich zu Dennis, Denarixx oder dieser Website.\nIch antworte in Ihrer Sprache.",
     "subtitle": "KI-Assistent für diese Seite",
-    "placeholder": "Frag mich etwas …",
+    "placeholder": "Fragen Sie mich etwas …",
     "send": "Senden"
   }
 }
