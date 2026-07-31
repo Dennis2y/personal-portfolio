@@ -27,8 +27,8 @@ function getDennisChatReply(rawInput) {
   // German: hallo
   if (msg === "hallo" || msg.startsWith("hallo ")) {
     return (
-      "Hallo! 👋 Wie kann ich dir heute helfen?\n" +
-      "Du kannst mir Fragen zu Dennis Charles, seinen Projekten, Denarixx oder zu kreativen Themen mit KI stellen."
+      "Hallo! 👋 Wie kann ich Ihnen heute helfen?\n" +
+      "Sie können mir Fragen zu Dennis Charles, seinen Projekten, Denarixx oder zu kreativen Themen mit KI stellen."
     );
   }
 
@@ -63,7 +63,7 @@ function getDennisChatReply(rawInput) {
     return (
       "Dennis Charles, auch bekannt als „Denarixx“, ist ein AI-Engineer und kreativer Digital Creator mit Sitz in Deutschland.\n" +
       "Er arbeitet an Projekten rund um KI, Automatisierung, kreative Inhalte und seinem eigenen Brand Denarixx – von Smartphones bis hin zu Automotive- und Digital-Lösungen.\n" +
-      "Wenn du mehr über seine Projekte oder Vision erfahren möchtest, frag einfach nach einem bestimmten Bereich (z.B. Auto-Projekt, Smartphone, AI-Videotools)."
+      "Wenn Sie mehr über seine Projekte oder Vision erfahren möchtest, frag einfach nach einem bestimmten Bereich (z.B. Auto-Projekt, Smartphone, AI-Videotools)."
     );
   }
 
@@ -72,7 +72,7 @@ function getDennisChatReply(rawInput) {
     return (
       "Dennis ist der Kopf hinter der Marke „Denarixx“.\n" +
       "Er kombiniert KI, Softwareentwicklung und Design, um neue Produkte und Services zu entwickeln – zum Beispiel AI-gestützte Websites, Video-Automatisierung und Konzeptfahrzeuge.\n" +
-      "Wenn du etwas Konkretes über ihn wissen willst (z.B. Werdegang, Projekte, Mindset), sag mir einfach, was dich interessiert."
+      "Wenn Sie etwas Konkretes über ihn wissen willst (z.B. Werdegang, Projekte, Mindset), sag mir einfach, was dich interessiert."
     );
   }
 

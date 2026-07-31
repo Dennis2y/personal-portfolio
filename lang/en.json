@@ -1,6 +1,7 @@
 {
-  "preloader": { "caption": "Calibrating cinematic systems…" },
-
+  "preloader": {
+    "caption": "Calibrating cinematic systems…"
+  },
   "nav": {
     "about": "About",
     "services": "What I Do",
@@ -8,17 +9,29 @@
     "story": "Story",
     "contact": "Contact"
   },
-
   "hero": {
     "tag": "AI • Automation • Digital Systems",
-    "title": { "part1": "I design", "part2": "intelligent systems", "part3": "with a cinematic, modern feel." },
-    "subtitle": "I’m <strong>Dennis Charles</strong> — an AI-driven founder and digital creator. I build systems that make life and business feel calmer, smarter, and more human.",
-    "btn": { "work": "View my work", "contact": "Say hello" },
-    "meta": { "location": "Germany · Global mindset", "focus": "AI tools · Automation · Digital experiences" }
+    "title": {
+      "part1": "I design",
+      "part2": "intelligent systems",
+      "part3": "with a cinematic, modern feel."
+    },
+    "subtitle": "I'm <strong>Dennis Charles</strong> — Founder & CEO of <strong>Denarixx Digital Solutions</strong>. I build AI-powered platforms, intelligent software systems, automation solutions, and premium digital experiences that help businesses innovate, scale, and operate more intelligently.",
+    "btn": {
+      "work": "View my work",
+      "contact": "Say hello"
+    },
+    "meta": {
+      "location": "Germany · Global mindset",
+      "focus": "AI tools · Automation · Digital experiences"
+    }
   },
-
-  "strip": { "1": "AI-assisted thinking", "2": "Automation & workflows", "3": "Digital experience design", "4": "Quiet long-term building" },
-
+  "strip": {
+    "1": "AI-assisted thinking",
+    "2": "Automation & workflows",
+    "3": "Digital experience design",
+    "4": "Quiet long-term building"
+  },
   "about": {
     "title": "Who I am",
     "lead": "I’m a builder at heart. I think in systems, interfaces and long-term ecosystems.",
@@ -32,15 +45,25 @@
     "style": "Neon cinematic UI, clean typography.",
     "focus": "Turning complexity into clarity."
   },
-
   "services": {
     "title": "What I do",
-    "ai": { "title": "AI-aware tools", "desc": "Products that use AI quietly and respectfully." },
-    "design": { "title": "Digital experience design", "desc": "Clean dashboards, elegant interfaces." },
-    "automation": { "title": "Automation & workflows", "desc": "Turning chaos into calm systems." },
-    "advice": { "title": "Advisory", "desc": "1:1 guidance without exposing private ideas." }
+    "ai": {
+      "title": "AI-aware tools",
+      "desc": "Products that use AI quietly and respectfully."
+    },
+    "design": {
+      "title": "Digital experience design",
+      "desc": "Clean dashboards, elegant interfaces."
+    },
+    "automation": {
+      "title": "Automation & workflows",
+      "desc": "Turning chaos into calm systems."
+    },
+    "advice": {
+      "title": "Advisory",
+      "desc": "1:1 guidance without exposing private ideas."
+    }
   },
-
   "invest": {
     "title": "A Quiet Pipeline of World-Scale Innovations",
     "lead1": "I’m developing several long-horizon systems under the Denarixx brand — built slowly, privately, and with a clear vision of where the next decade is heading.",
@@ -57,15 +80,22 @@
     "closing": "If you want early access, private previews or strategic collaboration, reach out directly. The real details are only shared in conversation.",
     "btn": "Request Private Conversation →"
   },
-
   "projects": {
     "title": "Selected directions",
     "subtitle": "A snapshot of my creative direction — the deeper work stays private.",
-    "dash": { "title": "Decision-support dashboards", "desc": "Turning raw data into clear stories." },
-    "auto": { "title": "Creative automation", "desc": "Systems that save time and reduce stress." },
-    "exp": { "title": "Digital experiences", "desc": "Neon UI, smooth flows, modern energy." }
+    "dash": {
+      "title": "Decision-support dashboards",
+      "desc": "Turning raw data into clear stories."
+    },
+    "auto": {
+      "title": "Creative automation",
+      "desc": "Systems that save time and reduce stress."
+    },
+    "exp": {
+      "title": "Digital experiences",
+      "desc": "Neon UI, smooth flows, modern energy."
+    }
   },
-
   "future": {
     "heading": "Quiet long-term inventions (investor-friendly)",
     "subtitle": "Beyond software, I’m building a small family of hardware-rooted systems under the Denarixx ecosystem. Details are intentionally private, but serious partners can request a deeper conversation.",
@@ -82,7 +112,6 @@
     "healthTitle": "Denarixx Health",
     "healthDesc": "Explorations around long-term wellbeing, subtle support and better collaboration between people and professionals — with specifics kept strictly offline and private."
   },
-
   "story": {
     "title": "My story, briefly",
     "lead": "My path wasn't easy. But it made me strong.",
@@ -92,12 +121,15 @@
     "p4": "The full story is something I prefer to share in conversation — not in a loud public timeline. If this energy resonates, we can talk.",
     "quote": "“I turned survival into strategy — and now I design systems for clarity.”"
   },
-
   "contact": {
     "title": "Let’s talk privately",
     "lead": "If my mindset resonates, reach out.",
-    "email": { "label": "Email" },
-    "location": { "label": "Location" },
+    "email": {
+      "label": "Email"
+    },
+    "location": {
+      "label": "Location"
+    },
     "locationText": "Germany · global",
     "name": "Name",
     "reason": "Reason",
@@ -110,9 +142,9 @@
     "msg": "Message",
     "btn": "Send message"
   },
-
-  "footer": { "rights": "All rights reserved." },
-
+  "footer": {
+    "rights": "All rights reserved."
+  },
   "chat": {
     "launcher": "Chat with me",
     "subtitle": "AI assistant for this site",
